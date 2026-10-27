@@ -1,0 +1,26 @@
+{
+  "assets": [
+    {
+      "asset": "room",
+      "prompt": "Create a new cinematic 16:9 background plate using the supplied reference ONLY for lighting, perspective and atmosphere. An empty 1930s–1940s industrial military warehouse / underground supply depot interior. Deep central aisle, receding ceiling beams and metal pipes, rows of hanging round warm tungsten lamps becoming small golden bokeh in the distance, dark shelves and shadowy machinery at far sides, amber haze illuminated from the upper left, realistic warm brown/olive tones, filmic high contrast, believable detailed photography. Camera at chest height looking horizontally down the aisle, central vanishing point around x52% y48%. Empty foreground, no people, no foreground crates or bags, no flags, no symbols, no writing, no watermark, no UI, no arrows. This clean plate will be layered behind independently animated cutouts.",
+      "status": "Generated and used",
+      "reference": "user-supplied final depot frame",
+      "transparent": false
+    },
+    {
+      "asset": "people",
+      "prompt": "Generate a new transparent-background photographic cutout sprite sheet, landscape 3:2, using the supplied reference only to guide these two fictional men's visual appearance and warm cinematic lighting. Exactly TWO separate front-facing middle-aged European men standing naturally, serious neutral expressions, brown 1930s–1940s utilitarian military/work jackets over dark shirts. Left man has short curly dark gray hair, no glasses. Right man has neatly slicked gray hair and dark round sunglasses. Each figure shown from full head to upper thighs, complete both shoulders and both upper arms; hands relaxed below waist. Left figure entirely contained in left half, right figure entirely in right half, a generous transparent gap between them, neither overlaps or touches the other. Figures same height, top of hair at 5% image height, bottom at 96%. Warm directional light from upper left, detailed natural skin and brown cloth, matching historical documentary reconstruction. On each figure's OUTER upper arm a plain RED cloth armband with a blank WHITE circular patch: left man's image-left upper arm, right man's image-right upper arm. Blank patches, NO symbols or text anywhere. The insignia will be added as separately editable runtime overlays. Strictly true transparent alpha background, no room, no ground, no frame, no watermark, no captions. Human proportions, lifelike realism; no heroic staging.",
+      "status": "Rejected by image service; not used. Figures extracted with SVG masks from user-supplied reference instead.",
+      "reference": "user-supplied final depot frame",
+      "transparent": true
+    },
+    {
+      "asset": "crate",
+      "prompt": "Create one realistic photographic alpha cutout of a large WWII-era wooden military equipment crate covered by an olive drab green canvas tarp. Use the supplied reference as style guidance for the foreground green cargo. Wide box with rounded canvas-draped top and angular shoulders, heavy textured woven olive fabric, one dark brown leather tie-down strap vertically down the front, a little dark wooden crate base with horizontal slats visible along the bottom. Seen from straight ahead slightly above, full object isolated with margin on all sides, natural 4:3 aspect. Warm soft amber lighting from upper left, realistic folds, subtle worn fabric, dark shadows, consistent cinematic documentary collage. Front canvas has clear empty area on the LEFT of the strap for a separately editable marking. No symbols, no text, no person, no military weapon, no background, no watermark, no shadow outside object. True transparent alpha. One single crate, not multiple objects.",
+      "status": "Generated and used",
+      "reference": "user-supplied final depot frame",
+      "transparent": true
+    }
+  ],
+  "note": "A staged historical documentary reconstruction; not archival evidence. Symbol overlays are independently editable."
+}

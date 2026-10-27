@@ -1,0 +1,658 @@
+{
+  "schemaVersion": 1,
+  "style": "noir-expose",
+  "assets": [
+    {
+      "id": "city-aerial-v1-credit",
+      "label": "City Aerial V1 Credit",
+      "src": "assets/city-aerial-v1-credit.txt",
+      "kind": "documentation",
+      "alpha": false,
+      "slots": [],
+      "method": "source provenance text",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "city-aerial-v1",
+      "label": "Illustrative Bavarian aerial image",
+      "src": "assets/city-aerial-v1.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [],
+      "method": "generated raster plate",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "clouds",
+      "label": "Clouds",
+      "src": "assets/clouds.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "clouds"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "desk-lamp-v3",
+      "label": "Desk and practical lamp \u00b7 alpha cutout",
+      "src": "assets/desk-lamp-v3.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "deskLamp"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "desk",
+      "label": "Desk",
+      "src": "assets/desk.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "desk"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "faces-v3",
+      "label": "Fire scene \u00b7 paired portrait cutouts",
+      "src": "assets/faces-v3.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "people",
+        "leftPortrait",
+        "rightPortrait"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "fire-poster",
+      "label": "Fire Poster",
+      "src": "assets/fire-poster.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "firePoster"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "fire",
+      "label": "Fire",
+      "src": "assets/fire.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "fire"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "lamp",
+      "label": "Lamp",
+      "src": "assets/lamp.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "lamp"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "map",
+      "label": "Opening map image",
+      "src": "assets/map.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [],
+      "method": "generated raster plate",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "mystery-men",
+      "label": "Mysterious men \u00b7 rear-view alpha cutout",
+      "src": "assets/mystery-men.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "mysteryMen"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "mystery-sky",
+      "label": "Noir cloud and mountain background",
+      "src": "assets/mystery-sky.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [
+        "mysterySky"
+      ],
+      "method": "generated raster plate",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "outdoor",
+      "label": "Outdoor",
+      "src": "assets/outdoor.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [
+        "outdoor"
+      ],
+      "method": "generated raster plate",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "pair-v2",
+      "label": "Background portrait pair \u00b7 alpha cutout",
+      "src": "assets/pair-v2.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "backPair"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "people",
+      "label": "People",
+      "src": "assets/people.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [],
+      "method": "generated alpha cutout",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "portrait",
+      "label": "Opening archival-style portrait",
+      "src": "assets/portrait.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "real-fire-credit",
+      "label": "Real Fire Credit",
+      "src": "assets/real-fire-credit.txt",
+      "kind": "documentation",
+      "alpha": false,
+      "slots": [],
+      "method": "source provenance text",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "real-fire",
+      "label": "Photographed flame recording",
+      "src": "assets/real-fire.mp4",
+      "kind": "video",
+      "alpha": false,
+      "slots": [],
+      "method": "included photographed footage",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "reveal",
+      "label": "Reveal",
+      "src": "assets/reveal.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [],
+      "method": "generated raster plate",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "shoulder-v3",
+      "label": "Shoulder V3",
+      "src": "assets/shoulder-v3.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [
+        "shoulder"
+      ],
+      "method": "generated raster plate",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "shoulder",
+      "label": "Shoulder",
+      "src": "assets/shoulder.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [],
+      "method": "generated raster plate",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "soil-cross-section",
+      "label": "Granular soil \u00b7 earth cross-section",
+      "src": "assets/soil-cross-section.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [
+        "soil"
+      ],
+      "method": "generated raster plate",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "standing",
+      "label": "Standing foreground pair",
+      "src": "assets/standing.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "standing"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "wisps",
+      "label": "Wisps",
+      "src": "assets/wisps.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "wisps"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "young-man-v2",
+      "label": "Young foreground man \u00b7 alpha cutout",
+      "src": "assets/young-man-v2.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "youngMan"
+      ],
+      "method": "generated alpha cutout",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "young-man",
+      "label": "Young Man",
+      "src": "assets/young-man.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [],
+      "method": "generated alpha cutout",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "chess-scene",
+      "label": "Chessboard and pieces \u00b7 Three.js geometry",
+      "kind": "scene3d",
+      "src": "chess-engine.js",
+      "method": "procedural lathed solids, extruded knight/marks, depth-tested scene",
+      "editable": true
+    },
+    {
+      "id": "brush-alphabet",
+      "label": "Noir Brush / Ink / Chalk \u00b7 pen-path alphabet",
+      "kind": "stroke-font",
+      "src": "brush-writing.js",
+      "method": "original procedural single-stroke alphabet; vector pen-path reveal",
+      "editable": true
+    },
+    {
+      "id": "city-plane",
+      "label": "Image-on-3D-plane engine",
+      "kind": "recipe",
+      "src": "city-engine.js",
+      "method": "2D image or video texture projected onto a perspective plane; not reconstructed buildings",
+      "editable": true
+    },
+    {
+      "id": "snow-material",
+      "label": "Snow \u00b7 natural fine grains",
+      "src": "assets/snow-material.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [
+        "snow"
+      ],
+      "method": "generated photorealistic material plate",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "soldiers-sheet",
+      "label": "Four soldier cutouts \u00b7 2\u00d72 sprite sheet",
+      "src": "assets/soldiers-sheet.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "battleSoldiers"
+      ],
+      "method": "generated RGBA sheet; each quadrant is cropped at runtime; per-soldier transforms, recoil and muzzle anchor",
+      "active": true,
+      "editable": true,
+      "regions": [
+        {
+          "label": "Soldier 1",
+          "rect": [
+            0.0,
+            0.0,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "label": "Soldier 2",
+          "rect": [
+            0.5,
+            0.0,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "label": "Soldier 3",
+          "rect": [
+            0.0,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "label": "Soldier 4",
+          "rect": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battle-fireball",
+      "label": "Conflict \u00b7 billowing fireball texture",
+      "src": "assets/battle-fireball.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "battleFireball"
+      ],
+      "method": "RGBA blast plate with one expansion, rising advection, internal deformation, debris and burnout; no repeated global scale pulsing",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "battle-ridge",
+      "label": "Conflict \u00b7 rocky foreground ridge",
+      "src": "assets/battle-ridge.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "battleRidge"
+      ],
+      "method": "generated RGBA rocky cutout; foreground occlusion pass",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "atmosphere-engine",
+      "label": "Animated clouds, smoke & fog \u00b7 path-driven billboards",
+      "src": "atmosphere-engine.js",
+      "kind": "recipe",
+      "alpha": true,
+      "slots": [],
+      "method": "seeded procedural billow textures advected along arc-length-sampled paths; not a fluid simulation",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "battle-motion",
+      "label": "Glide & staggered firing \u00b7 deterministic motion recipe",
+      "src": "battle-motion.js",
+      "kind": "recipe",
+      "alpha": true,
+      "slots": [],
+      "method": "seeded event schedule, one/two flashes, cutout recoil and overlapping glide",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "conflict-generation-briefs",
+      "label": "Conflict \u00b7 exact asset generation prompts",
+      "src": "assets/conflict-generation-briefs.json",
+      "kind": "documentation",
+      "alpha": false,
+      "slots": [],
+      "method": "exact submitted prompts, tool and provenance",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "soldier-1",
+      "label": "Soldier 1 \u00b7 standalone transparent cutout",
+      "src": "assets/soldier-1.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "battleSoldier0"
+      ],
+      "method": "lossless SVG viewport wrapper around an embedded original generated PNG quadrant; no runtime sheet canvas",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "soldier-2",
+      "label": "Soldier 2 \u00b7 standalone transparent cutout",
+      "src": "assets/soldier-2.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "battleSoldier1"
+      ],
+      "method": "lossless SVG viewport wrapper around an embedded original generated PNG quadrant; no runtime sheet canvas",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "soldier-3",
+      "label": "Soldier 3 \u00b7 standalone transparent cutout",
+      "src": "assets/soldier-3.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "battleSoldier2"
+      ],
+      "method": "lossless SVG viewport wrapper around an embedded original generated PNG quadrant; no runtime sheet canvas",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "soldier-4",
+      "label": "Soldier 4 \u00b7 standalone transparent cutout",
+      "src": "assets/soldier-4.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "battleSoldier3"
+      ],
+      "method": "lossless SVG viewport wrapper around an embedded original generated PNG quadrant; no runtime sheet canvas",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "conflict-fire-keyframe-v6",
+      "label": "Conflict fire \u00b7 visual reference keyframe",
+      "src": "assets/conflict-fire-keyframe-v6.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [],
+      "method": "generated edit of selected reference; inactive visual guide, not flattened scene replacement",
+      "active": false,
+      "editable": true,
+      "generationPrompt": "Edit only the fire in this exact target image. Preserve every soldier and rifle pose, all rocks, sky, mountains, composition, framing and lighting. Replace the small illustrated orange flame stickers with photorealistic irregular turbulent ground flames behind and around the soldiers, on the same ground positions. Natural translucent hot yellow cores, amber orange edges, fine curling tongues, subtle heat distortion and faint gray wisps. Keep flames modest, below shoulder level, no explosion, no giant blast, no added soldiers, no text, no UI. This is a reference keyframe for a motion editor; preserve all scene geometry.",
+      "creativeIntent": "Natural ground combustion around soldiers before a single explosion; preserve editable separate scene layers.",
+      "promptStatus": "executed-image-edit"
+    },
+    {
+      "id": "depot-room",
+      "label": "Supply depot \u00b7 warm industrial background",
+      "src": "assets/depot-room.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [
+        "depotRoom"
+      ],
+      "method": "generated photographic background plate",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "depot-crate",
+      "label": "Canvas-covered military equipment case",
+      "src": "assets/depot-crate.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "depotCrate"
+      ],
+      "method": "generated alpha cargo cutout; independent vector markings",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "depot-man-left",
+      "label": "Depot soldier \u00b7 left \u00b7 plain military uniform",
+      "src": "assets/depot-soldier-left-v10.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "depotManLeft"
+      ],
+      "method": "Generated transparent uniformed pair, isolated by native SVG viewport. Integrated political insignia request rejected; no floating armband overlay.",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "depot-man-right",
+      "label": "Depot soldier \u00b7 right \u00b7 plain military uniform",
+      "src": "assets/depot-soldier-right-v10.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [
+        "depotManRight"
+      ],
+      "method": "Generated transparent uniformed pair, isolated by native SVG viewport. Integrated political insignia request rejected; no floating armband overlay.",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "depot-figures-reference",
+      "label": "Depot figures \u00b7 supplied source frame",
+      "src": "assets/depot-figures-reference.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [],
+      "method": "user-provided visual source, not archival attribution",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "depot-head-reference",
+      "label": "Depot left figure \u00b7 full-head source frame",
+      "src": "assets/depot-head-reference.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [],
+      "method": "user-provided visual source for unclipped hair contour",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "depot-generation-briefs",
+      "label": "Depot \u00b7 exact generation briefs and result status",
+      "src": "assets/depot-generation-briefs.json",
+      "kind": "documentation",
+      "alpha": false,
+      "slots": [],
+      "method": "exact submitted prompts; rejected figure generation explicitly recorded",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "depot-man-left-legacy-v8",
+      "label": "Depot figure \u00b7 left \u00b7 archived rough mask",
+      "src": "assets/depot-man-left.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [],
+      "method": "user-reference photograph with a native SVG subject mask; independent runtime armband",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "depot-man-right-legacy-v8",
+      "label": "Depot figure \u00b7 right, round glasses \u00b7 archived rough mask",
+      "src": "assets/depot-man-right.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [],
+      "method": "user-reference photograph with native SVG subject mask; independent runtime armband",
+      "active": false,
+      "editable": true
+    },
+    {
+      "id": "depot-mountain-face",
+      "label": "Mountain descent \u00b7 continuous rock face",
+      "src": "assets/depot-mountain-face-v10.png",
+      "kind": "image",
+      "alpha": false,
+      "slots": [
+        "depotMountain"
+      ],
+      "active": true,
+      "editable": true
+    }
+  ]
+}

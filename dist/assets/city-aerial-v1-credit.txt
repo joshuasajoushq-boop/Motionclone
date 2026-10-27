@@ -1,0 +1,4 @@
+Generated illustrative aerial image, created with the built-in image-generation tool for this motion template.
+Not Google Earth imagery. Not a geographically accurate depiction of Herzogenaurach.
+Prompt: Square straight-down overhead aerial photograph-like view of an illustrative Bavarian German town inspired by Herzogenaurach, with dense terracotta pitched roofs, cream houses, mature trees, a central narrow river and linear park, a footbridge, winding residential streets, historic factory buildings, and a church spire. Neutral late-afternoon natural light. Continuous townscape, no horizon, labels, watermark, baked blur, neon, or overlays.
+Original output: exec-3eda19c2-ece8-44a2-a50f-34d7d526f8f9.png

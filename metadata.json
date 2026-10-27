@@ -1,0 +1,6 @@
+{
+  "name": "Regaarder Motion Atelier",
+  "description": "Documentary motion editor with luminous glass impact, storm animation, period figure cutouts, editable camera and cargo staging, grouped surface keyframes, and selectable title transitions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

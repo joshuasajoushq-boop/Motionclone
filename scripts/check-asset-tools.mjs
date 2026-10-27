@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import {recordSceneAsset,hitSceneAsset,translateSceneAssets,sampleKeys} from '../dist/scene-geometry.js';
+import {tracePalette} from '../dist/vector-trace.js';
+import {validateTextLayer} from '../dist/authoring-schema.js';
+const ctx={canvas:{},getTransform:()=>({a:0,b:2,c:-2,d:0,e:300,f:40})};recordSceneAsset(ctx,{id:'cutout'},[0,0,80,100]);const item=ctx.canvas.sceneAssets[0];assert(hitSceneAsset(item,200,120));assert(!hitSceneAsset(item,320,120));const shifted=translateSceneAssets([item],-140,0)[0];assert(hitSceneAsset(shifted,60,120));assert(!hitSceneAsset(shifted,220,120));
+const alpha={width:2,height:2,data:new Uint8ClampedArray(16)};alpha.data[3]=255;const a={...item,matrix:{a:1,b:0,c:0,d:1,e:0,f:0},rect:[0,0,20,20],alpha};assert(hitSceneAsset(a,3,3));assert(!hitSceneAsset(a,17,17),'transparent corners must select the layer below');
+const patch={x:0,height:100,keys:[{at:2,x:20,height:110},{at:6,x:100,height:190}]};assert.equal(sampleKeys(patch,4).x,60);assert.equal(sampleKeys(patch,4).height,150);assert.equal(sampleKeys(patch,1).x,20);assert.equal(sampleKeys(patch,20).x,100);assert.equal(patch.x,0,'sampling must not mutate saved base state');
+assert.equal(validateTextLayer({text:'Secrets',order:'under-head'}).order,'under-head');assert.equal(validateTextLayer({text:'Corruption',whiteMode:'glyph-spread',whiteGlyphStart:3,whiteGlyphEnd:6}).whiteGlyphEnd,6);
+const rgba=new Uint8ClampedArray([255,0,0,255,255,0,0,255,0,0,0,0,0,255,0,255]);const svg=tracePalette(rgba,2,2,2);assert(svg.includes('fill="#ff0000"'));assert(svg.includes('M0 0h2v1H0z'));assert(!svg.includes('<image'));assert(!svg.includes('base64'));assert(!svg.includes('fill="#000000"'),'transparent source pixels must remain absent');
+// A frozen fire sprite cannot pass: exercise the same procedural engine used as live fallback.
+const sandbox={console,document:{createElement:()=>({width:0,height:0,getContext:type=>type==='webgl'?null:{createImageData:(w,h)=>({data:new Uint8ClampedArray(w*h*4)}),putImageData(){}}})}};vm.runInNewContext(fs.readFileSync('dist/flame-engine.js','utf8')+';this.engine=new FlameEngine()',sandbox);const f={fireStyle:'wall',fireColor:'#ff7623',fireSpeed:60,wildness:65,fire:80,wind:0};sandbox.engine.render(.5,f);const early=Array.from(sandbox.engine.pixels.data);sandbox.engine.render(1.5,f);const later=Array.from(sandbox.engine.pixels.data);assert.notDeepEqual(early,later,'internal flame pixels must evolve with time');sandbox.engine.render(.5,f);assert.deepEqual(Array.from(sandbox.engine.pixels.data),early,'scrubbing back must reproduce the same flames');
+console.log('Asset tools passed: rotated/translated alpha picking, nonmutating keyframe interpolation, head-only layering schema, whole-glyph ink, raster-free SVG tracing, evolving deterministic flame pixels.');

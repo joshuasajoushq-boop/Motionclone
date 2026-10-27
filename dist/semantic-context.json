@@ -1,0 +1,498 @@
+{
+  "schema": "regaarder-semantic-context-v1",
+  "style": "noir-expose",
+  "transcriptStatus": "awaiting-user-transcript",
+  "transcript": "",
+  "purpose": "Connect narration, metaphor, asset provenance, editing actions and future sound cues in a reviewable authoring record.",
+  "notes": "Creative explanations are concise authoring rationales, not private chain-of-thought. No model training has occurred.",
+  "shots": [
+    {
+      "id": "earth-to-city",
+      "scene": "city",
+      "localStart": 0,
+      "localEnd": 6,
+      "narration": "",
+      "narrationStatus": "pending",
+      "intent": "Reveal the physical setting beneath the strategic chess metaphor.",
+      "metaphor": "The chessboard is an abstract contest; the town is its real-world setting. Passing through a material boundary changes the scale from strategy to place.",
+      "assets": [
+        "soil-cross-section",
+        "city-aerial-v1"
+      ],
+      "actions": [
+        "surface reveal",
+        "3D-plane camera descent",
+        "edge depth blur"
+      ],
+      "soundCue": "Unconfirmed suggestion: muted low-frequency movement with granular foley.",
+      "status": "editorial interpretation; confirm against transcript"
+    },
+    {
+      "id": "brand-division",
+      "scene": "city",
+      "localStart": 20,
+      "localEnd": 38,
+      "narration": "",
+      "narrationStatus": "pending",
+      "intent": "Show competing brands and a divided shared environment.",
+      "metaphor": "The color boundary visualizes separation inside a common geography. The cat silhouette in the supplied reference represents Puma, rather than Jaguar.",
+      "assets": [
+        "city-aerial-v1",
+        "city-plane"
+      ],
+      "actions": [
+        "surface-attached color regions",
+        "orbit",
+        "logo rotation",
+        "cutout entrance"
+      ],
+      "soundCue": "Pending narration and sound direction.",
+      "status": "editorial interpretation; confirm against transcript"
+    },
+    {
+      "id": "concealment-to-words",
+      "scene": "noir",
+      "localStart": 8,
+      "localEnd": 18,
+      "narration": "",
+      "narrationStatus": "pending",
+      "intent": "Expose hidden wrongdoing while the camera reveals the full figures.",
+      "metaphor": "Rear-view men suggest anonymity; clouds suggest obscurity; Lies, Secrets and Corruption name the ideas implied by the visual. The white text over dark silhouettes is a contrast treatment and may suggest exposure, subject to transcript confirmation.",
+      "assets": [
+        "mystery-men",
+        "mystery-sky",
+        "clouds",
+        "brush-alphabet"
+      ],
+      "actions": [
+        "inverse foreground/background parallax",
+        "brightening",
+        "overlapping stroke writing",
+        "alpha-masked white takeover"
+      ],
+      "soundCue": "Unconfirmed suggestion: rising atmospheric bed, sparse pen texture; no audio attached.",
+      "status": "user-directed imagery with provisional semantic interpretation"
+    },
+    {
+      "id": "conflict-glide-and-escalation",
+      "scene": "battle",
+      "localStart": 0,
+      "localEnd": 26,
+      "narration": "",
+      "narrationStatus": "pending",
+      "intent": "Continue the cloud collage with a horizontal reveal of soldiers, escalating fire and smoke, staggered visual firing and low foreground fog.",
+      "metaphor": "The user-directed visual moves from named abstract wrongdoing to armed conflict. The exact narrative association remains provisional until the transcript is supplied.",
+      "assets": [
+        "mystery-sky",
+        "soldiers-sheet",
+        "battle-ridge",
+        "battle-fireball",
+        "atmosphere-engine",
+        "battle-motion"
+      ],
+      "actions": [
+        "overlapping horizontal glide",
+        "individual alpha cutouts",
+        "seeded one/two muzzle flashes",
+        "subtle cutout recoil",
+        "growing textured blast",
+        "path-driven rising smoke",
+        "foreground fog build"
+      ],
+      "soundCue": "No audio attached. Future narration and foley cues must be aligned to the saved shot-event times.",
+      "status": "visual sequence supplied by user; narrative metaphor and sound awaiting transcript"
+    },
+    {
+      "id": "conflict-to-depot",
+      "scene": "depot",
+      "localStart": 0,
+      "localEnd": 34,
+      "narration": "",
+      "narrationStatus": "pending",
+      "intent": "Move from the battlefield into a concealed wartime supply setting, then reveal the two figures and marked cargo.",
+      "metaphor": "The descent moves beneath the visible conflict; the backward move reveals people and equipment within the same wartime supply system. This association is user-directed and remains provisional until the transcript is supplied.",
+      "assets": [
+        "depot-room",
+        "depot-crate",
+        "depot-man-left",
+        "depot-man-right"
+      ],
+      "editingActions": [
+        "dark smoke veil",
+        "continuous downward camera passage",
+        "depth-separated cargo reveal",
+        "shoulder close-up",
+        "monotonic pullback",
+        "independent figure cutouts and armbands",
+        "late foreground cargo"
+      ],
+      "soundCue": "Pending narration and sound direction; no sound is attached.",
+      "status": "User-directed visual reconstruction. No real-person identification or archival attribution is asserted.",
+      "cameraMethod": "Shared perspective camera over fixed-depth billboards; opaque people reveal through cropping and foreground occlusion; reflective refractive glass on a perspective-projected frame."
+    },
+    {
+      "id": "depot-framed-storm",
+      "scene": "depot",
+      "localStart": 32,
+      "localEnd": 58,
+      "narration": "",
+      "narrationStatus": "pending",
+      "intent": "Pull back from the warehouse into a framed monochrome photograph, progressively crack its glass, tilt and recede between opposing storm clouds.",
+      "assets": [
+        "depot-man-left",
+        "depot-man-right",
+        "depot-crate",
+        "depot-room"
+      ],
+      "actions": [
+        "frame pullback",
+        "progressive glass cracks",
+        "independent tilt and rotation",
+        "blue and red clouds",
+        "glowing lightning divider",
+        "brief secondary lightning"
+      ],
+      "status": "reference-inspired visual sequence; narration pending",
+      "cameraMethod": "Shared perspective camera over fixed-depth billboards; opaque people reveal through cropping and foreground occlusion; reflective refractive glass on a perspective-projected frame."
+    }
+  ],
+  "assets": [
+    {
+      "assetId": "soil-cross-section",
+      "generationPrompt": "Photorealistic exposed earth cross-section, fine granular brown dirt with clods, small stones and roots, natural irregular structure, no lettering or ornamental pattern.",
+      "promptStatus": "reconstructed brief; exact prior generation prompt was not retained",
+      "method": "Generated raster material, composited through a feathered animated contour.",
+      "rationale": "Retain material detail while reducing the oversized jagged cut-paper appearance with broad edge contours, lower contrast and alpha feathering."
+    },
+    {
+      "assetId": "mystery-men",
+      "generationPrompt": "Two anonymous adult men seen from behind, full bodies including shoes, long dark coats, distinct silhouettes, cinematic realistic lighting, isolated transparent background, no lettering.",
+      "promptStatus": "reconstructed brief; exact prior generation prompt was not retained",
+      "method": "Generated RGBA cutout, animated as a foreground layer; not reconstructed human 3D geometry.",
+      "rationale": "The anonymous backs communicate concealment without asserting real identities. Alpha enables separation from sky and text overlap masking."
+    },
+    {
+      "assetId": "mystery-sky",
+      "generationPrompt": "Dramatic Alpine mountain panorama, layered distant ridges and bright atmospheric clouds, cinematic muted palette, no people, no lettering.",
+      "promptStatus": "reconstructed brief; exact prior generation prompt was not retained",
+      "method": "Generated background raster with separate cloud overlay.",
+      "rationale": "Distant layers support opposite background/foreground movement and a gradual reveal from darkness."
+    },
+    {
+      "assetId": "clouds",
+      "generationPrompt": "",
+      "promptStatus": "unknown; do not fabricate an exact historical prompt",
+      "method": "Existing generated cloud alpha asset.",
+      "rationale": "Independent drift provides atmospheric depth."
+    },
+    {
+      "assetId": "city-aerial-v1",
+      "generationPrompt": "",
+      "promptStatus": "unknown; consult source credit and original authoring record",
+      "method": "Generated illustrative aerial plate on a perspective plane.",
+      "rationale": "Town-scale perspective creates geographic context; it is not verified Google Earth geography."
+    },
+    {
+      "assetId": "snow-material",
+      "generationPrompt": "Use case: photorealistic-natural. Asset type: full-frame snow material plate for an animated reveal, landscape 16:9. Primary request: natural fresh fine-grained white snow viewed at close range from a gently oblique overhead camera. Broad softly rounded irregular low drifts, very subtle wind-shaped microtexture and soft blue-grey shadows, diffuse overcast lighting. Fill the entire image with snow, no sky or horizon, no foreground objects, no footprints, no people, no trees, no text, no border. Avoid regular repeating bands, ornamental patterns, glossy plastic and exaggerated ridges. The material should be quiet and smooth at screen scale yet convincingly granular when seen closely.",
+      "promptStatus": "exact submitted prompt",
+      "method": "Built-in image generation; RGB raster material animated through the shared feathered contour mask.",
+      "rationale": "Natural fine grains preserve the snow material identity without regular repeated bands; editable contour and feather control its motion edge."
+    },
+    {
+      "assetId": "city-aerial-v1-credit",
+      "generationPrompt": "",
+      "promptStatus": "not applicable",
+      "method": "source provenance text",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "desk-lamp-v3",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "desk",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "faces-v3",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "fire-poster",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "fire",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "lamp",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "map",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated raster plate",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "outdoor",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated raster plate",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "pair-v2",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "people",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "portrait",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "real-fire-credit",
+      "generationPrompt": "",
+      "promptStatus": "not applicable",
+      "method": "source provenance text",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "real-fire",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "included photographed footage",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "reveal",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated raster plate",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "shoulder-v3",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated raster plate",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "shoulder",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated raster plate",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "standing",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "wisps",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "young-man-v2",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "young-man",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "generated alpha cutout",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "chess-scene",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "procedural lathed solids, extruded knight/marks, depth-tested scene",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "brush-alphabet",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "original procedural single-stroke alphabet; vector pen-path reveal",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "city-plane",
+      "generationPrompt": "",
+      "promptStatus": "unknown; not retained",
+      "method": "2D image or video texture projected onto a perspective plane; not reconstructed buildings",
+      "rationale": "Detailed narrative association pending transcript review."
+    },
+    {
+      "assetId": "soldiers-sheet",
+      "generationPrompt": "Use case: historical-scene. Asset type: transparent cutout sprite sheet for a documentary motion collage. Four distinct anonymous adult soldiers in unmarked mid-20th-century olive-drab field uniforms and round steel helmets, each crouching or kneeling and aiming a long rifle horizontally toward the LEFT. Full figure and entire rifle visible in each cell, neutral side/three-quarter view, realistic photographic texture, dark cinematic muted tones with a subtle warm rim. Arrange EXACTLY four isolated figures in a 2 by 2 grid of equally sized cells on a genuinely transparent background. Each figure and its rifle must fit fully within its own cell, with wide clear transparent gutters and no overlap between cells. No terrain, no smoke, no muzzle flash, no flags or insignia, no text, no borders, no visible wounds. Different kneeling poses but rifles all aim left. Each figure will be independently cropped from its quadrant and animated.",
+      "promptStatus": "exact submitted prompt",
+      "method": "generated RGBA sheet; each quadrant is cropped at runtime; per-soldier transforms, recoil and muzzle anchor",
+      "rationale": "Independent anonymous figures allow staggered visual firing and depth placement without asserting real identities or historical events."
+    },
+    {
+      "assetId": "battle-fireball",
+      "generationPrompt": "Use case: photorealistic-natural. Asset type: transparent VFX fireball texture for documentary animation. One large billowing orange and golden-yellow explosion fireball, near-white incandescent core and intensely detailed turbulent orange lobes, darker red curling edges, some dark smoke mixing at the top. Broad round irregular mushroom-like mass, entire fireball contained inside the frame with transparent padding all around. Photorealistic cinematic VFX, isolated on genuinely transparent background. No ground, no people, no buildings, no weapons, no lettering, no sparks trails extending to frame edges. This is a compositing texture; avoid a square or opaque backdrop.",
+      "promptStatus": "exact submitted prompt",
+      "method": "generated RGBA VFX plate with independent expansion, pulsation and turbulence layers",
+      "rationale": "A broad billowing blast is visually distinct from the earlier room flames. Expansion behind the ridge builds escalation."
+    },
+    {
+      "assetId": "battle-ridge",
+      "generationPrompt": "Use case: photorealistic-natural. Asset type: transparent rocky foreground cutout for a cinematic documentary collage. A broad dark rough rocky ridge with several irregular peaks and small ledges, like a low rocky outcrop rising from the lower frame, wet black-brown rock with fine realistic mineral detail. The highest central peak at about half the image height; lower left and right shoulders. Side/front camera view, full ridge spans nearly the image width but with padding, entirely isolated on genuinely transparent background. Muted diffuse overcast lighting, no people, no vegetation, no sky, no fire, no text. Keep the bottom edge a continuous thick rock mass so it can extend below the video frame.",
+      "promptStatus": "exact submitted prompt",
+      "method": "generated RGBA rocky cutout; foreground occlusion pass",
+      "rationale": "A separate rock cutout provides a shared ground plane and occludes the lower legs to anchor the collage."
+    },
+    {
+      "assetId": "atmosphere-engine",
+      "generationPrompt": "",
+      "promptStatus": "not applicable; authored source code or provenance record",
+      "method": "seeded procedural billow textures advected along arc-length-sampled paths; not a fluid simulation",
+      "rationale": "Separate reusable capabilities expose granular authoring and deterministic playback."
+    },
+    {
+      "assetId": "battle-motion",
+      "generationPrompt": "",
+      "promptStatus": "not applicable; authored source code or provenance record",
+      "method": "seeded event schedule, one/two flashes, cutout recoil and overlapping glide",
+      "rationale": "Separate reusable capabilities expose granular authoring and deterministic playback."
+    },
+    {
+      "assetId": "conflict-generation-briefs",
+      "generationPrompt": "",
+      "promptStatus": "not applicable; authored source code or provenance record",
+      "method": "exact submitted prompts, tool and provenance",
+      "rationale": "Separate reusable capabilities expose granular authoring and deterministic playback."
+    },
+    {
+      "assetId": "soldier-1",
+      "generationPrompt": "",
+      "promptStatus": "not a new generation; see soldiers-sheet exact prompt",
+      "method": "Standalone self-contained SVG cutout, using the original PNG quadrant with no runtime sheet canvas.",
+      "rationale": "Avoid shared master-sheet and cropped-canvas dependencies; retain original pixels and transparent edges."
+    },
+    {
+      "assetId": "soldier-2",
+      "generationPrompt": "",
+      "promptStatus": "not a new generation; see soldiers-sheet exact prompt",
+      "method": "Standalone self-contained SVG cutout, using the original PNG quadrant with no runtime sheet canvas.",
+      "rationale": "Avoid shared master-sheet and cropped-canvas dependencies; retain original pixels and transparent edges."
+    },
+    {
+      "assetId": "soldier-3",
+      "generationPrompt": "",
+      "promptStatus": "not a new generation; see soldiers-sheet exact prompt",
+      "method": "Standalone self-contained SVG cutout, using the original PNG quadrant with no runtime sheet canvas.",
+      "rationale": "Avoid shared master-sheet and cropped-canvas dependencies; retain original pixels and transparent edges."
+    },
+    {
+      "assetId": "soldier-4",
+      "generationPrompt": "",
+      "promptStatus": "not a new generation; see soldiers-sheet exact prompt",
+      "method": "Standalone self-contained SVG cutout, using the original PNG quadrant with no runtime sheet canvas.",
+      "rationale": "Avoid shared master-sheet and cropped-canvas dependencies; retain original pixels and transparent edges."
+    },
+    {
+      "assetId": "depot-room",
+      "generationPrompt": "Create a new cinematic 16:9 background plate using the supplied reference ONLY for lighting, perspective and atmosphere. An empty 1930s\u20131940s industrial military warehouse / underground supply depot interior. Deep central aisle, receding ceiling beams and metal pipes, rows of hanging round warm tungsten lamps becoming small golden bokeh in the distance, dark shelves and shadowy machinery at far sides, amber haze illuminated from the upper left, realistic warm brown/olive tones, filmic high contrast, believable detailed photography. Camera at chest height looking horizontally down the aisle, central vanishing point around x52% y48%. Empty foreground, no people, no foreground crates or bags, no flags, no symbols, no writing, no watermark, no UI, no arrows. This clean plate will be layered behind independently animated cutouts.",
+      "promptStatus": "exact submitted prompt",
+      "method": "generated background plate",
+      "rationale": "Match the supplied warm historical collage while keeping parallax layers editable."
+    },
+    {
+      "assetId": "depot-crate",
+      "generationPrompt": "Create one realistic photographic alpha cutout of a large WWII-era wooden military equipment crate covered by an olive drab green canvas tarp. Use the supplied reference as style guidance for the foreground green cargo. Wide box with rounded canvas-draped top and angular shoulders, heavy textured woven olive fabric, one dark brown leather tie-down strap vertically down the front, a little dark wooden crate base with horizontal slats visible along the bottom. Seen from straight ahead slightly above, full object isolated with margin on all sides, natural 4:3 aspect. Warm soft amber lighting from upper left, realistic folds, subtle worn fabric, dark shadows, consistent cinematic documentary collage. Front canvas has clear empty area on the LEFT of the strap for a separately editable marking. No symbols, no text, no person, no military weapon, no background, no watermark, no shadow outside object. True transparent alpha. One single crate, not multiple objects.",
+      "promptStatus": "exact submitted prompt",
+      "method": "generated alpha cutout",
+      "rationale": "Match the supplied warm historical collage while keeping parallax layers editable."
+    },
+    {
+      "assetId": "depot-man-left",
+      "generationPrompt": "Historical documentary animation asset. Two fictional middle aged soldiers in plain gray-green 1940s military field tunics, shoulder boards, breast pockets, belts, matching trousers and boots. Left curly short gray-brown hair, right combed gray hair and round dark glasses. Both serious neutral expressions, standing facing camera with arms relaxed. Full bodies and complete heads, shoulders, arms and hands fully visible, no cropped anatomy. Warm amber cinematic key light upper left. No flags, no political symbols, no armbands, no lettering or badges. Two clearly separated nonoverlapping figures, one per half of a landscape 3:2 transparent sprite sheet with generous transparent gutters and margins. Realistic detailed photographic fabric and skin, true transparent background, no room, cargo or floor.",
+      "promptStatus": "exact",
+      "method": "Generated uniformed pair, isolated by native SVG viewport; no added armband overlays",
+      "rationale": "Military uniforms replace civilian work jackets; integrated historical insignia generation was rejected and remains incomplete."
+    },
+    {
+      "assetId": "depot-man-right",
+      "generationPrompt": "Historical documentary animation asset. Two fictional middle aged soldiers in plain gray-green 1940s military field tunics, shoulder boards, breast pockets, belts, matching trousers and boots. Left curly short gray-brown hair, right combed gray hair and round dark glasses. Both serious neutral expressions, standing facing camera with arms relaxed. Full bodies and complete heads, shoulders, arms and hands fully visible, no cropped anatomy. Warm amber cinematic key light upper left. No flags, no political symbols, no armbands, no lettering or badges. Two clearly separated nonoverlapping figures, one per half of a landscape 3:2 transparent sprite sheet with generous transparent gutters and margins. Realistic detailed photographic fabric and skin, true transparent background, no room, cargo or floor.",
+      "promptStatus": "exact",
+      "method": "Generated uniformed pair, isolated by native SVG viewport; no added armband overlays",
+      "rationale": "Military uniforms replace civilian work jackets; integrated historical insignia generation was rejected and remains incomplete."
+    }
+  ],
+  "futureInputs": {
+    "transcript": {
+      "status": "pending",
+      "needs": [
+        "verbatim text",
+        "optional word or sentence timestamps",
+        "speaker/language"
+      ]
+    },
+    "sound": {
+      "status": "planned",
+      "needs": [
+        "audio file and permission",
+        "cue timestamps",
+        "music/foley intent"
+      ]
+    },
+    "formats": {
+      "implemented": [
+        "960x540 (16:9)"
+      ],
+      "planned": [
+        "9:16 safe-area-aware layout",
+        "1:1",
+        "4:5",
+        "resolution-independent export"
+      ]
+    }
+  }
+}

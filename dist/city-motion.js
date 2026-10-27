@@ -1,0 +1,4 @@
+export const bound=v=>Math.max(0,Math.min(1,v));
+export const eased=v=>{v=bound(v);return v*v*(3-2*v)};
+export function cityCamera(age,f){const q=eased((age-f.cityDescent)/f.cityFlyTime),spin=eased((age-f.citySpinStart)/f.citySpinTime),x=f.cityStartU+(f.cityEndU-f.cityStartU)*q,v=f.cityStartV+(f.cityEndV-f.cityStartV)*q,target=[(x-.5)*30,0,(v-.5)*30],height=(f.cityStartElevation+(f.cityEndElevation-f.cityStartElevation)*q)*Math.PI/180,angle=(f.cityHeading+spin*f.cityTurns*360)*Math.PI/180,dist=f.cityStartDistance+(f.cityEndDistance-f.cityStartDistance)*q;return{target,position:[target[0]+Math.sin(angle)*dist*Math.cos(height),Math.sin(height)*dist,target[2]+Math.cos(angle)*dist*Math.cos(height)],roll:(f.cityRoll*(1-q)+f.cityEndRoll*q)*Math.PI/180,logo:eased((age-f.cityLogoStart)/f.cityLogoFade),cat:eased((age-f.cityCatStart)/f.cityCatTime),spin}}
+export function earthEdge(x,age,progress){return 540*(1-progress)+Math.sin(x*.009+age*.8)*18+Math.sin(x*.023-age*.5)*8}

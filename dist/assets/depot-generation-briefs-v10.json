@@ -1,0 +1,10 @@
+{
+  "uniform": {
+    "prompt": "Historical documentary animation asset. Two fictional middle aged soldiers in plain gray-green 1940s military field tunics, shoulder boards, breast pockets, belts, matching trousers and boots. Left curly short gray-brown hair, right combed gray hair and round dark glasses. Both serious neutral expressions, standing facing camera with arms relaxed. Full bodies and complete heads, shoulders, arms and hands fully visible, no cropped anatomy. Warm amber cinematic key light upper left. No flags, no political symbols, no armbands, no lettering or badges. Two clearly separated nonoverlapping figures, one per half of a landscape 3:2 transparent sprite sheet with generous transparent gutters and margins. Realistic detailed photographic fabric and skin, true transparent background, no room, cargo or floor.",
+    "status": "succeeded; plain period military uniforms; integrated political armband request rejected by image service"
+  },
+  "mountain": {
+    "prompt": "Photorealistic dark basalt mountain rock face texture plate for a documentary camera descent. Tall portrait aspect 2:3. Camera very close looking across a rough steep mountainside, continuous natural irregular black-brown volcanic rock, realistic crags, cracks, mineral grain and subtle damp highlights. Diffuse overcast daylight at top gradually darker at bottom, atmospheric mist near edges. Rock fills the ENTIRE image including all four edges: no sky, no horizon, no visible top of cliff, no ground seam, no people, no plants, no buildings, no text or borders. Do not make long stretched vertical streaks: natural detailed rocky surfaces. This plate continues beneath an existing battlefield ridge during a downward camera move.",
+    "status": "succeeded"
+  }
+}

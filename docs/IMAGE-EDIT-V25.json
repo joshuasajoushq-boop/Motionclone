@@ -1,0 +1,6 @@
+{
+  "source": "user-selected image-edit-target-14ed0dd695b85e73.png",
+  "prompt": "Edit this exact warehouse cargo reference image. Remove only the four colored annotation arrows (green and red), seamlessly reconstructing the canvas tarp, background and lights beneath them. Preserve all the original historical cargo markings already present, the objects, their positions and sizes, the left flag, the warm cinematic lighting and the 16:9 composition. Do not add people or new symbols. Keep the two large closest cases clearly in front of the smaller rear cases, with believable grounded perspective. This is a clean reference plate for matching an independently animated documentary scene, not a poster; no new text or borders.",
+  "status": "Image service rejected the selected reference cleanup at output moderation; no replacement was produced or used.",
+  "uniformInsignia": "Earlier integrated insignia generation rejection remains unresolved; no new floating overlays added."
+}

@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import {resolveSoldierSource,createBattleScene} from '../dist/battle-scene.js';
+import {validateTextLayer} from '../dist/authoring-schema.js';
+const missing={src:'broken',naturalWidth:0},sheet={src:'https://site/assets/soldiers-sheet.png?visibility=3',naturalWidth:1536,naturalHeight:1024},single={src:'blob:custom-cutout',naturalWidth:768,naturalHeight:512};
+assert.equal(resolveSoldierSource(missing,sheet,null).image,sheet);assert.equal(resolveSoldierSource(missing,sheet,null).sheet,true);assert.equal(resolveSoldierSource(sheet,single,null).sheet,false);assert.equal(resolveSoldierSource(missing,missing,sheet).image,sheet);
+const canvases=[];function canvas(){const value={width:0,height:0,draws:[]};const ctx=new Proxy({canvas:value,drawImage(...args){value.draws.push(args)},createRadialGradient(){return {addColorStop(){}}}},{get(o,k){return k in o?o[k]:(()=>{})}});value.getContext=()=>ctx;canvases.push(value);return value}
+globalThis.document={createElement:canvas};globalThis.Image=class{naturalWidth=1536;naturalHeight=1024;};
+const raw=fs.readFileSync('dist/battle.js','utf8');const source=raw.slice(raw.indexOf('const battleDefaults='),raw.indexOf('\nObject.assign'));const sandbox={};vm.runInNewContext(source+';this.f=battleDefaults',sandbox);const f={...sandbox.f,battleLayers:{soldiers:true,fireball:false,smoke:false,flashes:false,terrain:false,fog:false}};
+const renderer=createBattleScene(),target=canvas();const independent={battleSoldiers:missing};for(let i=0;i<4;i++)independent['battleSoldier'+i]=sheet;assert.equal(renderer.panel(target.getContext(),12,f,independent,{transparent:true}).soldiersDrawn,4,'broken master must not hide ready individual sheets');assert.equal(renderer.panel(target.getContext(),12,f,{battleSoldiers:missing},{transparent:true}).soldiersDrawn,4,'bundled fallback must recover all figures');assert.equal(target.draws.length,8);assert(target.draws.slice(-4).every(([im])=>im.src.endsWith('.svg')),'missing sheets use independent standalone cutouts');
+assert.equal(validateTextLayer({text:'Secrets',order:'front',frontContrast:true}).frontContrast,true);assert.throws(()=>validateTextLayer({text:'Secrets',frontContrast:'true'}));
+console.log('Visibility regressions passed: missing master, ready individual sheets, bundled fallback, quadrant layout and foreground contrast settings.');
+const original=fs.readFileSync('dist/assets/soldiers-sheet.png');for(let i=0;i<4;i++){const svg=fs.readFileSync(`dist/assets/soldier-${i+1}.svg`,'utf8');assert(svg.includes(`viewBox="${i%2*768} ${Math.floor(i/2)*512} 768 512"`));const data=svg.match(/base64,([A-Za-z0-9+/=]+)/)[1];assert.deepEqual(Buffer.from(data,'base64'),original,'standalone cutout preserves original image bytes');assert(!svg.includes('https://'),'standalone cutout must not need an external image fetch')}
+console.log('Standalone cutout delivery passed: four unique viewports with embedded original pixels and no external image dependencies.');

@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-10-27",
+  "tool": "built-in image generation",
+  "promptStatus": "exact submitted prompts",
+  "briefs": [
+    {
+      "id": "soldiers",
+      "prompt": "Use case: historical-scene. Asset type: transparent cutout sprite sheet for a documentary motion collage. Four distinct anonymous adult soldiers in unmarked mid-20th-century olive-drab field uniforms and round steel helmets, each crouching or kneeling and aiming a long rifle horizontally toward the LEFT. Full figure and entire rifle visible in each cell, neutral side/three-quarter view, realistic photographic texture, dark cinematic muted tones with a subtle warm rim. Arrange EXACTLY four isolated figures in a 2 by 2 grid of equally sized cells on a genuinely transparent background. Each figure and its rifle must fit fully within its own cell, with wide clear transparent gutters and no overlap between cells. No terrain, no smoke, no muzzle flash, no flags or insignia, no text, no borders, no visible wounds. Different kneeling poses but rifles all aim left. Each figure will be independently cropped from its quadrant and animated."
+    },
+    {
+      "id": "fireball",
+      "prompt": "Use case: photorealistic-natural. Asset type: transparent VFX fireball texture for documentary animation. One large billowing orange and golden-yellow explosion fireball, near-white incandescent core and intensely detailed turbulent orange lobes, darker red curling edges, some dark smoke mixing at the top. Broad round irregular mushroom-like mass, entire fireball contained inside the frame with transparent padding all around. Photorealistic cinematic VFX, isolated on genuinely transparent background. No ground, no people, no buildings, no weapons, no lettering, no sparks trails extending to frame edges. This is a compositing texture; avoid a square or opaque backdrop."
+    },
+    {
+      "id": "ridge",
+      "prompt": "Use case: photorealistic-natural. Asset type: transparent rocky foreground cutout for a cinematic documentary collage. A broad dark rough rocky ridge with several irregular peaks and small ledges, like a low rocky outcrop rising from the lower frame, wet black-brown rock with fine realistic mineral detail. The highest central peak at about half the image height; lower left and right shoulders. Side/front camera view, full ridge spans nearly the image width but with padding, entirely isolated on genuinely transparent background. Muted diffuse overcast lighting, no people, no vegetation, no sky, no fire, no text. Keep the bottom edge a continuous thick rock mass so it can extend below the video frame."
+    }
+  ]
+}

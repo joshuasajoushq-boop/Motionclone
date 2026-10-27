@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "noir-expose",
+  "name": "Noir Expos\u00e9",
+  "aliases": [
+    "Noir Expose",
+    "investigative collage"
+  ],
+  "recipeVersion": 1,
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "methods": [
+    "image-on-3d-plane",
+    "alpha-cutout-parallax",
+    "manual-polygon-alpha-mask",
+    "procedural-chess-mesh",
+    "pen-path-lettering",
+    "textured-earth-reveal",
+    "normalized-color-territories"
+  ],
+  "lettering": [
+    "Noir Brush",
+    "Noir Ink",
+    "Noir Chalk"
+  ],
+  "assetManifest": "asset-manifest.json",
+  "guide": "NOIR-EXPOSE.md",
+  "authoringAPI": "window.NoirExpose",
+  "limitations": [
+    "Image planes are not reconstructed 3D objects",
+    "Manual cutout only; no automatic segmentation",
+    "Browser-local uploads; no external AI service or model training"
+  ],
+  "capabilityRegistry": "MotionCore",
+  "semanticManifest": "semantic-context.json",
+  "blankCompositionSchema": "regaarder-composition-v1",
+  "surfacePresets": [
+    "soil",
+    "snow",
+    "clouds"
+  ],
+  "atmosphereMethods": [
+    "path-driven clouds",
+    "rising smoke",
+    "foreground fog"
+  ],
+  "conflictContinuation": "CONFLICT-CONTINUATION.md"
+}

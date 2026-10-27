@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {regionPoints} from '../dist/region-tools.js';
+import {inkPaths,drawBrushText} from '../dist/brush-writing.js';
+import {noirState} from '../dist/noir-scene.js';
+import {validateTextLayer,validateRegionPatch,validateImageMotion} from '../dist/authoring-schema.js';
+const a=regionPoints({type:'split',side:'left',position:.3,angle:0,curve:0}),b=regionPoints({type:'split',side:'left',position:.7,angle:0,curve:0});assert(a.some(p=>p[0]===.3));assert(b.some(p=>p[0]===.7));const spot=regionPoints({points:[[.1,.1],[.3,.1],[.2,.3]],offsetX:.2,rotation:30});assert(spot.every(p=>p.every(Number.isFinite)));
+const paths=inkPaths('Lies Secrets Corruption',70);assert(paths.lines.length>20);assert(paths.width>0);assert(paths.lines.flat().every(p=>p.every(Number.isFinite)));
+function penLength(progress){let len=0,last;const ctx={save(){},restore(){},beginPath(){},moveTo(x,y){last=[x,y]},lineTo(x,y){len+=Math.hypot(x-last[0],y-last[1]);last=[x,y]},stroke(){}};drawBrushText(ctx,'Secrets',70,progress);return len}assert(penLength(.4)>0);assert(penLength(.4)<penLength(1));
+const f={noirFadeStart:3,noirFadeDuration:4,noirBlackHold:1,noirReveal:10,noirShiftStart:21,noirShiftTime:9,noirStartScale:1.5,noirEndScale:.82,noirBackDepth:.18,noirExposure:100};const start=noirState(8,f),end=noirState(38,f);assert(start.foreground>end.foreground);assert(start.background<end.background);assert.equal(noirState(7,f).black,1);assert.equal(end.brightness,1);
+assert.throws(()=>validateTextLayer({text:'x',x:'<img onerror=1>'}));assert.throws(()=>validateTextLayer({text:'x',color:'red'}));assert.throws(()=>validateRegionPatch({points:[[.2,.3]]}));assert.throws(()=>validateImageMotion({code:'bad'}));assert.equal(validateTextLayer({text:'Evidence',style:'ink',color:'#fff000'}).text,'Evidence');assert.equal(validateRegionPatch({opacity:2}).opacity,1);
+console.log('Authoring checks passed: movable divisions, polygon transforms, continuous pen-path reveal, inverse parallax and structured-input validation.');
