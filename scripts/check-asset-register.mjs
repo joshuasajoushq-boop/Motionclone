@@ -1,0 +1,7 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';
+const register=JSON.parse(fs.readFileSync('dist/asset-register.json')),entries=new Map(register.assets.map(a=>[a.path,a]));
+function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)])}
+for(const file of [...walk('dist/assets'),...walk('dist/vendor')]){const p=file.slice(5),a=entries.get(p);assert(a,'Missing asset register entry: '+p);assert(a.usageLabel&&a.source&&a.license);assert.equal(a.sha256,createHash('sha256').update(fs.readFileSync(file)).digest('hex'),'Stale provenance hash: '+p)}
+const md=fs.readFileSync('docs/ASSET-REGISTER.md','utf8');assert.equal(md,fs.readFileSync('dist/ASSET-REGISTER.md','utf8'));for(const a of register.assets)assert(md.includes(a.id));
+const brand=fs.readFileSync('dist/brand-marks.js','utf8');assert(brand.includes('M299.1 188.2L191'),'Official Adidas path must replace the geometric approximation');const html=fs.readFileSync('dist/index.html','utf8');assert(!html.includes('M9 51 48 35'),'Old animal silhouette remains in opening');assert(html.includes('assets/puma-lockup.svg')&&html.includes('assets/adidas-bars.svg'));
+console.log('Asset provenance passed: complete inventory, exact hashes, explicit usage labels, current opening logos and official Adidas geometry.');

@@ -63,3 +63,56 @@ Version 29: newly generated transparent relaxed-shoulder period uniform figures 
 
 
 Version 30: high-energy impact preset with 1.6s fracture spread, luminous beveled crack edges, editable glow, impact origin, branching, double-pulse screen bloom and shake. Cloud layers visibly advect and deform; lightning shares blast illumination. Added Web Audio thunder with volume/mute, playback speed 0.25–2x, Space play/pause, arrows ±1s (Shift ±5s), volume arrows. Editor uses the viewport with one inspector scroll; fullscreen Fill covers the screen, Fit preserves aspect with letterboxing. Added collapsed director groups, per-surface numeric keyframes and easing, object yaw/pitch and entrance presets, eight title entrance modes, editable title text/colors/timing and four frame-to-title transition modes. Verified fullscreen image, speed, keyboard seek/volume and director title controls. All check scripts passed.
+
+
+Version 32: pane rebuilt as 20 deterministic closed shards (12 at minimum branch density), including all pane corners. Shared boundaries are tiled without overlap or holes at tested center/off-center impacts. Each shard has an independent optical normal, local brightness/tint, tiny rotation and image displacement, and a differently angled/offset moving reflection. Dark crevices and selective thin bevel highlights replace uniformly glowing spokes. Material settings (optical tilt, facet contrast, reflection separation, tint) are exposed in the glass director and support surface keyframes. Existing impact timing, global frame perspective and transport layout retained.
+
+
+Version 33: complete post-fracture finale: secondary reflection and wider shard gaps, late darkening, an irregular soft portal beam, accelerated retreat and edge-on rotation, frame absorption, beam clearing, then a title delay. Large tinted rivalry portraits emerge in the storm. A dedicated director group exposes stage timings, gap/tilt, beam dimensions/intensity, absorption and title pause; timeline jump points cover each beat. Tests check ordering, full disappearance before title, continuous retreat and renderer coordinates.
+
+
+## Version34 · rivalry exit and floating-shoe chapter
+
+Extends the existing depot timeline to84seconds. Default sequence: portal clears53.25, title53.6, Puma zoom58–59.4, black gap, chapter60.2, assembly2.7seconds, moving hold12seconds, environment dim3seconds, whole-scene fade2seconds. These are inferred timings from screenshots and the narrated walkthrough, not measured source-video timing.
+
+Six deterministic procedural3D trainer meshes show upper/sole/collar/laces through independent yaw,pitch,roll rotations. They are illustrative models, not photogrammetric replicas or verified branded product models. Individual colours,position,size,blur,brightness,opacity,drift,rotation speeds and transform keyframes are exposed under Shoes. Right-side models stay unlabelled pending product identification.
+
+Chapter controls expose text,entrance variants,stagger,defocus,bloom,recession,hold/dim/fade timing,background logo transforms/tints,neon flash and particles. Quick preview buttons and jump points avoid scrubbing the entire clip. Numeric surface settings support the existing keyframe system; object colour/style are static controls. Settings continue to export through the existing story/preset system.
+
+Glass presets: Hairline,Cracked,Shattered,Falling shards. Break amount,detached fraction,fall start,gravity,spin and fade are independent. Beam intensity is applied to all portal light passes;zero removes beam contribution.
+
+The Puma silhouette is sourced from the official about.puma.com header and shared by the chapter,zoom transition,city reveal,chess logo and heritage badge. The old improvised animal paths are removed. The historical badge remains an illustrative composition. Source credit:assets/brand-credits.txt.
+
+Validation:check-chapter-motion.mjs checks ordering,black gap,continuous rotations and reversal,finite geometry/rendering,environment-first dim and shard falling. All existing checks also run. Shoes render sharply into per-object buffers before one depth-blur composite to avoid per-face filtering overhead.
+
+
+## Version35 · reference pacing, focus and source accuracy
+
+Chapter assembly now lasts5.2seconds, with a1.1second defocus hold and4.4second focus transition. Letter positions ease smoothly instead of resolving early under an ease-out curve. Persistent centre softness0.45px and edge softness2.4px retain the reference’s optical falloff after the text is readable. Initial text scale1.48 creates the enlarged cropped entrance; the later recession is gentler.
+
+Shoes arrive at0,0.35,1.9,3.2,4.5,6.1seconds; shared tumble speed is45% of the prior rate. Peripheral shoes are slightly smaller and softer. Background illumination is reduced to25%; logos use soft, low-opacity tints and stay within their own blue/violet and red/burgundy halves. A second right-side neon sweep peaks3.6seconds into the chapter. Glow and glyph opacity now multiply the parent opacity, preserving environment darkening and final fade.
+
+The official Adidas bar paths and wordmark were retrieved from the Adidas corporate site. The opening no longer embeds the old improvised cat or CSS bars. City branding is attached to the terrain texture, with stripes moved into the blue region and the Puma cat inside the red region, rather than a giant unrelated screen overlay. Chess uses the same registered silhouettes.
+
+Asset provenance is centrally documented in ASSET-REGISTER.md with73records, stable IDs, hashes, exact known web URLs, source locations, modifications and explicit usage labels. Unknown legacy provenance remains review-required. AGENTS.md requires future asset registration; build-asset-register.py and check-asset-register.mjs maintain and validate coverage.
+
+
+## Version 36 · optical refinement and continuous shoe depth
+
+Continues the complete v35 export; earlier scenes, cargo transforms, shared camera, shoulder clearance, scene start times, title content, black interval and 92-second depot clock are preserved. Browser inspection of the close camera pass at depot 12 seconds and the pullback at 17 seconds showed cargo tops above the shoulders, so those transforms were retained.
+
+The project-authored trainer mesh now uses a shaped last with a raised heel, narrow waist, wider forefoot and lifted rounded toe. A recessed ankle opening, inner wall, padded collar, tongue, eyelets, crossed laces, stitched welt and split tread blocks turn with the body. Leather, fabric and rubber receive distinct light response. The runner has unbranded panel seams; its side marking is not asserted to be Nike, Puma or an identified product. These remain illustrative procedural meshes, not scanned products or photographic replicas. No new external SVG or bitmap was required; registered official brand paths remain intact.
+
+Each shoe has continuous perspective depth travel, drift rate and focus falloff. Arrivals grow out of depth with extra defocus, an individual duration override and horizontal/vertical offsets. A duration of zero keeps the shared entrance-duration control active. Depth travel of zero disables depth motion. Foreground shoes composite after smaller distant shoes. All existing transforms, colours, opacity, signed tumble speeds and keyframes remain available. Arrival/depth and tumble/drift are collapsed advanced sections, with Gentle depth drift and Fixed depth presets.
+
+Chapter assembly remains 5.2 seconds with the 1.1-second defocus hold, 4.4-second focus transition, persistent centre/edge softness, six v35 arrival times and shared tumble speed 0.45. Default text glow is reduced from 22 to 14, logo width from 340 to 290, logo opacity from 0.16 to 0.10 and ambient illumination from 0.25 to 0.22. The right light now has a travelling bent neon core and broad bloom, rather than only a stationary luminous block. Its existing two pulse times remain editable. Chapter easing is independently selectable. The hold jump point now lands after assembly.
+
+Glass retains the deterministic tiled shard layout and all existing break/gap/fall controls. Opening increases independent refraction; local facet shear, narrow reflection cores and selective beam-driven catches add optical separation. The portal has smoothly advecting irregular edges, a narrower default width of 285 and independent bloom control (default 0.65). It keeps a powerful white centre while exposing more of the surrounding storm. The additional yaw completes earlier during absorption so an edge-on frame is still visible before opacity reaches zero. Disappearance, beam clearing and title ordering are unchanged.
+
+Migration: `depot-chapter-v36` updates glow, logo size/opacity and ambient only when a value exactly matches its v35 default. Custom values, shoe transforms/colours, arrival start times and motion keys survive. New per-shoe fields fill only absent values. `depot-chapter-before-v36` retains the prior chapter settings and shoes. `depot-optics-v36` changes only the matching old beam width of 440; `depot-optics-before-v36` stores its old optical settings. A shared `motion-v36` asset query prevents mixed-version renderer imports after an update.
+
+Validation: all 19 `scripts/check-*.mjs` entry points pass, including the new chapter editor/migration integration check. It exercises actual director initialization, matching-default updates, preservation of custom values/keyframes, repeat initialization, deterministic continuous depth and edge-on rotation before disappearance. Asset-register rebuild and validation cover 73 current items and updated procedural surface hashes.
+
+Browser QA used the existing editor at depot 45.5 (fractures/reflection), 49.5 (dark hold), 51.8 (edge-on absorption), 52.3 (frame gone), 60.3 (black interval), 62.1 (defocus entrance), 64.6 (assembly/right sweep), 67 and 71 (assembled/hold), 83.5 (environment dim), 86 (late fade) and 88 seconds (black exit). The chapter was also played at 1x, and the collapsed advanced shoe controls were inspected. These are timeline positions in this implementation, not inferred timestamps from reference screenshot filenames. No frame-rate benchmark or pixel-accurate reference match is claimed. Further visual refinement, exact shoe identification and native-speed source-video timing remain open.
+
+Publication: the supplied existing Site project ID is preserved, but the Sites connector returned “Sites project not found” for both lookup and source access. No replacement Site was created and no deployment to the old live URL is claimed. GitHub synchronization is separate from Site publication.

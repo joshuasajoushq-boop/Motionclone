@@ -1,5 +1,5 @@
 /* Tap-to-select assets, renderer-backed bounds and per-type authoring tools. */
-let sceneGeometry=null,selectedSceneAsset=null,selectionCycle=0;import('./scene-geometry.js?v=depot-v17').then(m=>sceneGeometry=m);
+let sceneGeometry=null,selectedSceneAsset=null,selectionCycle=0;import('./scene-geometry.js?v=motion-v36').then(m=>sceneGeometry=m);
 const selectionSVG=document.createElementNS('http://www.w3.org/2000/svg','svg');selectionSVG.setAttribute('viewBox','0 0 960 540');selectionSVG.classList.add('assetSelectionOutline');selectionSVG.setAttribute('aria-hidden','true');base.append(selectionSVG);
 const selectionTools=document.createElement('section');selectionTools.id='assetContextTools';selectionTools.className='assetContextTools';selectionTools.hidden=true;selectionTools.setAttribute('aria-label','Selected asset tools');base.parentElement.insertBefore(selectionTools,base.nextSibling);
 function currentSceneAssets(){const seconds=t*settings.duration,d=phaseTimes();if(seconds>=d.noir&&seconds<d.images)return base.querySelector('.continuation')?.sceneAssets||[];if(seconds>=d.fire&&seconds<d.outdoor)return [{id:'room-fire',kind:'roomFire',name:'Desk fire',rect:[0,0,960,540],bounds:{x:0,y:0,w:960,h:540},matrix:{a:1,b:0,c:0,d:1,e:0,f:0},corners:[{x:0,y:0},{x:960,y:0},{x:960,y:540},{x:0,y:540}]}];return []}

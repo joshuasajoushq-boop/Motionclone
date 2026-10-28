@@ -653,6 +653,71 @@
       ],
       "active": true,
       "editable": true
+    },
+    {
+      "id": "adidas-bars",
+      "label": "Official adidas three-bar mark",
+      "src": "assets/adidas-bars.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [],
+      "method": "Official SVG symbol#logo extracted without changing path geometry",
+      "source": "https://www.adidas-group.com/en/public/icons/icons.svg",
+      "usageLabel": "brand-reference",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "adidas-wordmark",
+      "label": "Official adidas wordmark",
+      "src": "assets/adidas-wordmark.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [],
+      "method": "Official SVG wordmark; non-SVG className removed",
+      "source": "https://www.adidas-group.com/en/public/adidas-logo-white.svg",
+      "usageLabel": "brand-reference",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "puma-cat",
+      "label": "Official PUMA leaping cat",
+      "src": "assets/puma-cat.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [],
+      "method": "Official corporate header inline SVG; preserved path and added standalone viewBox",
+      "source": "https://about.puma.com",
+      "usageLabel": "brand-reference",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "puma-lockup",
+      "label": "Official PUMA cat and wordmark",
+      "src": "assets/puma-lockup.svg",
+      "kind": "image",
+      "alpha": true,
+      "slots": [],
+      "method": "Official corporate footer inline SVG; preserved geometry, white fill",
+      "source": "https://about.puma.com",
+      "usageLabel": "brand-reference",
+      "active": true,
+      "editable": true
+    },
+    {
+      "id": "depot-uniformed-pair-v29",
+      "label": "Generated plain-uniform pair \u00b7 v29",
+      "src": "assets/depot-uniformed-pair-v29.png",
+      "kind": "image",
+      "alpha": true,
+      "slots": [],
+      "method": "Generated alpha cutout using the built-in image-generation tool; recorded in the project conversation. Exact submitted prompt/output ID not retained in the current checkout.",
+      "source": null,
+      "usageLabel": "generated-recorded",
+      "active": true,
+      "editable": true
     }
   ]
 }

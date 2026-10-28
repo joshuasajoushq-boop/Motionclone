@@ -1,0 +1,736 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-10-28",
+  "assets": [
+    {
+      "id": "asset-assets-adidas-bars-svg",
+      "path": "assets/adidas-bars.svg",
+      "sha256": "469d19e80e9e59570c86f60a100f34f94c2372aee4b925650057d94db8396952",
+      "bytes": 275,
+      "label": "adidas official three-bar mark",
+      "usageLabel": "brand-reference",
+      "source": "https://www.adidas-group.com/en/public/icons/icons.svg",
+      "license": "Not specified by the downloaded corporate asset. No broad redistribution or trademark clearance is asserted."
+    },
+    {
+      "id": "asset-assets-adidas-wordmark-svg",
+      "path": "assets/adidas-wordmark.svg",
+      "sha256": "db6f14a6806b5444aa0e8678ff4e9e032a2fb8decc020fed16bc413af9b8d4f2",
+      "bytes": 1238,
+      "label": "adidas official wordmark",
+      "usageLabel": "brand-reference",
+      "source": "https://www.adidas-group.com/en/public/adidas-logo-white.svg",
+      "license": "Not specified by the downloaded corporate asset. No broad redistribution or trademark clearance is asserted."
+    },
+    {
+      "id": "asset-assets-battle-fireball-png",
+      "path": "assets/battle-fireball.png",
+      "sha256": "42af1cd39a5909a21493acb983184fc2f53abce8e0465a2acaea0dc683b811b7",
+      "bytes": 2155186,
+      "label": "Conflict \u00b7 billowing fireball texture",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-battle-ridge-png",
+      "path": "assets/battle-ridge.png",
+      "sha256": "099dfbe903c67fe174427f4a1dff5168b1aaf9632cca7ebe08a1009405538889",
+      "bytes": 2047444,
+      "label": "Conflict \u00b7 rocky foreground ridge",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-brand-credits-txt",
+      "path": "assets/brand-credits.txt",
+      "sha256": "825439eee5f9cbcdb1dad76ae7fcfa6357edc89fbd874c602c1d950d152a9012",
+      "bytes": 236,
+      "label": "Brand Credits",
+      "usageLabel": "metadata",
+      "source": "Existing project documentation",
+      "license": "Contains provenance and prompts; not a scene asset"
+    },
+    {
+      "id": "asset-assets-city-aerial-v1-credit-txt",
+      "path": "assets/city-aerial-v1-credit.txt",
+      "sha256": "945fba3a6dede8ebc03c5485c51ba36dff3165a6be7b2cd8c6b04c3df268b63c",
+      "bytes": 711,
+      "label": "City Aerial V1 Credit",
+      "usageLabel": "metadata",
+      "source": "Existing project documentation",
+      "license": "Contains provenance and prompts; not a scene asset"
+    },
+    {
+      "id": "asset-assets-city-aerial-v1-png",
+      "path": "assets/city-aerial-v1.png",
+      "sha256": "84309258540614d20635872001e5687627f64d416ae41344c26ffad8df1e96f6",
+      "bytes": 4003289,
+      "label": "Illustrative Bavarian aerial image",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-clouds-png",
+      "path": "assets/clouds.png",
+      "sha256": "b4ccfb64f40fbe440fd103d77d714ad29507ef9f9061fe2b4c93592343934604",
+      "bytes": 1244752,
+      "label": "Clouds",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-conflict-fire-keyframe-v6-png",
+      "path": "assets/conflict-fire-keyframe-v6.png",
+      "sha256": "8c0b5b547e2f93d9947cfb5bef34462db7c0751500f607797da5f52a7b69695a",
+      "bytes": 1942036,
+      "label": "Conflict fire \u00b7 visual reference keyframe",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-conflict-generation-briefs-json",
+      "path": "assets/conflict-generation-briefs.json",
+      "sha256": "0b9f15dc51acd4b8f8ad9791e86c8567e519371121e9c523d4456f1661790468",
+      "bytes": 2627,
+      "label": "Conflict \u00b7 exact asset generation prompts",
+      "usageLabel": "metadata",
+      "source": "Existing project documentation",
+      "license": "Contains provenance and prompts; not a scene asset"
+    },
+    {
+      "id": "asset-assets-depot-complete-figure-prompts-v9-json",
+      "path": "assets/depot-complete-figure-prompts-v9.json",
+      "sha256": "97f1ef1356492b4cdf95fe248d8822f1a7434062c256af914700a0a015f9c5d2",
+      "bytes": 2467,
+      "label": "Depot Complete Figure Prompts V9",
+      "usageLabel": "metadata",
+      "source": "Existing project documentation",
+      "license": "Contains provenance and prompts; not a scene asset"
+    },
+    {
+      "id": "asset-assets-depot-crate-png",
+      "path": "assets/depot-crate.png",
+      "sha256": "a22f3b953aa5e2da0229323ea9963c7cbdea2030d66e3661e59fd70d8a36aa17",
+      "bytes": 2911249,
+      "label": "Canvas-covered military equipment case",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-depot-figures-reference-png",
+      "path": "assets/depot-figures-reference.png",
+      "sha256": "67f7f97854e204bb44da564d8b55048466a86c3c8309ca805c33876426a0341e",
+      "bytes": 611083,
+      "label": "Depot figures \u00b7 supplied source frame",
+      "usageLabel": "user-reference",
+      "source": "User attachment; original public URL not recorded",
+      "license": "Unknown beyond the user-authorized template task"
+    },
+    {
+      "id": "asset-assets-depot-generation-briefs-v10-json",
+      "path": "assets/depot-generation-briefs-v10.json",
+      "sha256": "aef197acf5b4fb9469daa9689e0cc79c50dadd1a6972177bfeea08c4d760b8fa",
+      "bytes": 1767,
+      "label": "Depot Generation Briefs V10",
+      "usageLabel": "metadata",
+      "source": "Existing project documentation",
+      "license": "Contains provenance and prompts; not a scene asset"
+    },
+    {
+      "id": "asset-assets-depot-generation-briefs-json",
+      "path": "assets/depot-generation-briefs.json",
+      "sha256": "d511df86f08fff1e5866bce515f8d990fde744018dbddb67e56d26fda92ecc9d",
+      "bytes": 3983,
+      "label": "Depot \u00b7 exact generation briefs and result status",
+      "usageLabel": "metadata",
+      "source": "Existing project documentation",
+      "license": "Contains provenance and prompts; not a scene asset"
+    },
+    {
+      "id": "asset-assets-depot-head-reference-png",
+      "path": "assets/depot-head-reference.png",
+      "sha256": "71021bc5edf809180207ffdc57cdb32d2fd4d93eb21e34613fdcbe05dc232174",
+      "bytes": 523436,
+      "label": "Depot left figure \u00b7 full-head source frame",
+      "usageLabel": "user-reference",
+      "source": "User attachment; original public URL not recorded",
+      "license": "Unknown beyond the user-authorized template task"
+    },
+    {
+      "id": "asset-assets-depot-man-left-svg",
+      "path": "assets/depot-man-left.svg",
+      "sha256": "dd134a00aac3aada8beb7aa986ea8bec5348ca00af9eacebd3fe2b06ff94ad12",
+      "bytes": 1513645,
+      "label": "Depot figure \u00b7 left \u00b7 archived rough mask",
+      "usageLabel": "user-reference",
+      "source": "User attachment; original public URL not recorded",
+      "license": "Unknown beyond the user-authorized template task"
+    },
+    {
+      "id": "asset-assets-depot-man-right-svg",
+      "path": "assets/depot-man-right.svg",
+      "sha256": "291bbf805ce3387ce41de3304de6251f177e4e923ba7eb2cb9dc799a365bb7ee",
+      "bytes": 815399,
+      "label": "Depot figure \u00b7 right, round glasses \u00b7 archived rough mask",
+      "usageLabel": "user-reference",
+      "source": "User attachment; original public URL not recorded",
+      "license": "Unknown beyond the user-authorized template task"
+    },
+    {
+      "id": "asset-assets-depot-mountain-face-v10-png",
+      "path": "assets/depot-mountain-face-v10.png",
+      "sha256": "905a9d2e6f598fc033403b1a20d60ca457a8bad156c6ea731e866be2b5bb7477",
+      "bytes": 3510138,
+      "label": "Mountain descent \u00b7 continuous rock face",
+      "usageLabel": "review-required",
+      "source": "Legacy project file; exact origin not documented",
+      "license": "Unknown; do not automatically reuse outside this task"
+    },
+    {
+      "id": "asset-assets-depot-person-left-v9-png",
+      "path": "assets/depot-person-left-v9.png",
+      "sha256": "fc7ff0a9b680ee180cc0aa33eecc4988e01e57c0ae1341deb5073c5832600e8a",
+      "bytes": 1656697,
+      "label": "Depot Person Left V9",
+      "usageLabel": "review-required",
+      "source": "Legacy project file; exact origin not documented",
+      "license": "Unknown; do not automatically reuse outside this task"
+    },
+    {
+      "id": "asset-assets-depot-person-right-v9-png",
+      "path": "assets/depot-person-right-v9.png",
+      "sha256": "5f2a2763c8d57b890e8ac2d48bc37583021c55fd1f99b96132c4f01fb1d9c7d9",
+      "bytes": 1618871,
+      "label": "Depot Person Right V9",
+      "usageLabel": "review-required",
+      "source": "Legacy project file; exact origin not documented",
+      "license": "Unknown; do not automatically reuse outside this task"
+    },
+    {
+      "id": "asset-assets-depot-room-png",
+      "path": "assets/depot-room.png",
+      "sha256": "f5d12486f42d35a2b267c0750a87c08b0be1de7405126e59a37c155741bd48d7",
+      "bytes": 2070117,
+      "label": "Supply depot \u00b7 warm industrial background",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-depot-soldier-left-v10-svg",
+      "path": "assets/depot-soldier-left-v10.svg",
+      "sha256": "6442246833c01451a3e90515a6d57a8dc5ba546b8f079248d0544c2d88be37ee",
+      "bytes": 2532364,
+      "label": "Depot soldier \u00b7 left \u00b7 plain military uniform",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-depot-soldier-right-v10-svg",
+      "path": "assets/depot-soldier-right-v10.svg",
+      "sha256": "c5f37bcd3cbee6f4f425a14d630e841ff470f06e90fd42d681dbf10a371a37f7",
+      "bytes": 2532366,
+      "label": "Depot soldier \u00b7 right \u00b7 plain military uniform",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-depot-uniformed-pair-v10-png",
+      "path": "assets/depot-uniformed-pair-v10.png",
+      "sha256": "59b36b0384a18f667b73ade1a3202f7b92fc4bbe5ec29a1ac9f7b56ea5ebcdce",
+      "bytes": 1899152,
+      "label": "Depot Uniformed Pair V10",
+      "usageLabel": "review-required",
+      "source": "Legacy project file; exact origin not documented",
+      "license": "Unknown; do not automatically reuse outside this task"
+    },
+    {
+      "id": "asset-assets-depot-uniformed-pair-v29-png",
+      "path": "assets/depot-uniformed-pair-v29.png",
+      "sha256": "6a98793f6e5a7cd1bc8d7872b5342dbfe14e0dfaedb86718aed0f84d24a9f474",
+      "bytes": 1825125,
+      "label": "Generated plain-uniform pair \u00b7 v29",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-desk-lamp-v3-png",
+      "path": "assets/desk-lamp-v3.png",
+      "sha256": "f7293766663be7e076578f15dc4e4f3fc632166c866478f6435e6d4d2abecaab",
+      "bytes": 2020196,
+      "label": "Desk and practical lamp \u00b7 alpha cutout",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-desk-png",
+      "path": "assets/desk.png",
+      "sha256": "0c2f98e637e2a86f50b8b870e10740c0298beb31b9006e0923fd7581ed91194a",
+      "bytes": 2541460,
+      "label": "Desk",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-faces-v3-png",
+      "path": "assets/faces-v3.png",
+      "sha256": "5bf0f5f1a696431d15a4c7ffa5ef35d3cb4e455dff13c9f1e64febea4db31c1f",
+      "bytes": 2025849,
+      "label": "Fire scene \u00b7 paired portrait cutouts",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-fire-poster-png",
+      "path": "assets/fire-poster.png",
+      "sha256": "6214a054c8bd00e77328c842c37f16c1b2b477fb146f425c5f8fc67ade23be3f",
+      "bytes": 2102389,
+      "label": "Fire Poster",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-fire-png",
+      "path": "assets/fire.png",
+      "sha256": "d39792ffe706cac10b1ca9344c022234d4cd908af0979996797eca5cb9fcd228",
+      "bytes": 2030703,
+      "label": "Fire",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-lamp-png",
+      "path": "assets/lamp.png",
+      "sha256": "eeee03dd74022bda537099ef5912f9775ab73d3929f28de0968a82addb9fffda",
+      "bytes": 813731,
+      "label": "Lamp",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-map-png",
+      "path": "assets/map.png",
+      "sha256": "edc4f7c0ecb5aa185e55d982063698518d7e0109c4b6ac8ec3033b81eb280b34",
+      "bytes": 2648899,
+      "label": "Opening map image",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-mystery-men-png",
+      "path": "assets/mystery-men.png",
+      "sha256": "467cf2b6b36d59e55a17d851b3605c05ef835b52ca4bd55cd4027591896b66b7",
+      "bytes": 1185857,
+      "label": "Mysterious men \u00b7 rear-view alpha cutout",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-mystery-sky-png",
+      "path": "assets/mystery-sky.png",
+      "sha256": "cf86b627f87a007efce7b328cedec20f8235d37b13322c2edb16a149b25ff790",
+      "bytes": 2168046,
+      "label": "Noir cloud and mountain background",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-outdoor-png",
+      "path": "assets/outdoor.png",
+      "sha256": "9dd4096d04d1a853a3ce78ed27986d2600f9be85e577b0375b6446f3702e7227",
+      "bytes": 3685012,
+      "label": "Outdoor",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-pair-v2-png",
+      "path": "assets/pair-v2.png",
+      "sha256": "15fc2c490b529a2c8b6b1f118f67cdb9cfe08156d708f3d75d8cf1ed9a92caf4",
+      "bytes": 1831563,
+      "label": "Background portrait pair \u00b7 alpha cutout",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-people-png",
+      "path": "assets/people.png",
+      "sha256": "7820eaff0d9717b0ad1fa5da937c47ec3a9f794fafe7fbd9a9cc8ed11220b746",
+      "bytes": 1977571,
+      "label": "People",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-portrait-png",
+      "path": "assets/portrait.png",
+      "sha256": "5dcdf8cbc6fba24b08f300265cd810470ba0f4dcb752417f4704377443c990d4",
+      "bytes": 2059594,
+      "label": "Opening archival-style portrait",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-puma-cat-svg",
+      "path": "assets/puma-cat.svg",
+      "sha256": "bc70453a65103e09db00332b261881a1cb368f6f7ffafb5ea56a82b703fb93f7",
+      "bytes": 1347,
+      "label": "PUMA leaping cat",
+      "usageLabel": "brand-reference",
+      "source": "https://about.puma.com",
+      "license": "Not specified by the downloaded corporate asset. No broad redistribution or trademark clearance is asserted."
+    },
+    {
+      "id": "asset-assets-puma-lockup-svg",
+      "path": "assets/puma-lockup.svg",
+      "sha256": "c4323fdc11201b74cfbe9b99b8073e215f8c3c1a1ad99e7363a40531fc232530",
+      "bytes": 3063,
+      "label": "PUMA combined cat and wordmark",
+      "usageLabel": "brand-reference",
+      "source": "https://about.puma.com",
+      "license": "Not specified by the downloaded corporate asset. No broad redistribution or trademark clearance is asserted."
+    },
+    {
+      "id": "asset-assets-real-fire-credit-txt",
+      "path": "assets/real-fire-credit.txt",
+      "sha256": "d1cc1e133b3ba6f7c5598092fc87145a56323d36e056d8b74782d6c3ca13a2ae",
+      "bytes": 371,
+      "label": "Real Fire Credit",
+      "usageLabel": "metadata",
+      "source": "Existing project documentation",
+      "license": "Contains provenance and prompts; not a scene asset"
+    },
+    {
+      "id": "asset-assets-real-fire-mp4",
+      "path": "assets/real-fire.mp4",
+      "sha256": "d1b1777cf6f4727f51ac33770c27dbe71795843f679a1e04aeb52214af1e5014",
+      "bytes": 4635920,
+      "label": "Fire on Black Background",
+      "usageLabel": "licensed-source",
+      "source": "https://www.pexels.com/video/fire-on-black-background-11977692/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "asset-assets-reveal-png",
+      "path": "assets/reveal.png",
+      "sha256": "7c69903df351ea10d2ea41e7df5a11450d82924be77083cc7675cbe9b8ec19cf",
+      "bytes": 2240487,
+      "label": "Reveal",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-shoulder-v3-png",
+      "path": "assets/shoulder-v3.png",
+      "sha256": "2941f7e86cfed0067fc41d890bd3c25c08b12df4e679c596142ae42b184fbc56",
+      "bytes": 1642252,
+      "label": "Shoulder V3",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-shoulder-png",
+      "path": "assets/shoulder.png",
+      "sha256": "9523df3906afb5d2fbf7dfd31a342c4c3d788efeb2f74c5b6326990a3df75305",
+      "bytes": 2048698,
+      "label": "Shoulder",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-snow-material-png",
+      "path": "assets/snow-material.png",
+      "sha256": "dff6bd308546858bc78b4a0e45f3e372d1038f98a3d47ddd2027949b84376261",
+      "bytes": 2231190,
+      "label": "Snow \u00b7 natural fine grains",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-soil-cross-section-png",
+      "path": "assets/soil-cross-section.png",
+      "sha256": "345b467a4e62e845011f6365cef388673e18229ce85bb593e4bc29c4787a19c3",
+      "bytes": 4138410,
+      "label": "Granular soil \u00b7 earth cross-section",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-soldier-1-svg",
+      "path": "assets/soldier-1.svg",
+      "sha256": "d55814f678667b518d696384849c723140391d706a87f84ac4aa9b033b3ba0b7",
+      "bytes": 2770591,
+      "label": "Soldier 1 \u00b7 standalone transparent cutout",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-soldier-2-svg",
+      "path": "assets/soldier-2.svg",
+      "sha256": "0e4349564198fd895c58587109651e421bca5b56121cf6a8592831f81dc2982d",
+      "bytes": 2770593,
+      "label": "Soldier 2 \u00b7 standalone transparent cutout",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-soldier-3-svg",
+      "path": "assets/soldier-3.svg",
+      "sha256": "fb18ad1f49fc3a8212918f1fba71e004d1a0e00f173c82de8a6750e99d6a3655",
+      "bytes": 2770593,
+      "label": "Soldier 3 \u00b7 standalone transparent cutout",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-soldier-4-svg",
+      "path": "assets/soldier-4.svg",
+      "sha256": "150222f91628150fba5c9ffb9100f2c2c699a725a849b0aff31c177a8a849b2f",
+      "bytes": 2770595,
+      "label": "Soldier 4 \u00b7 standalone transparent cutout",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-soldiers-sheet-png",
+      "path": "assets/soldiers-sheet.png",
+      "sha256": "8d4ef02acaeb72453c0a5f3af2b30b328e1da81c4886ee147f94a446beb54148",
+      "bytes": 2077786,
+      "label": "Four soldier cutouts \u00b7 2\u00d72 sprite sheet",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-standing-png",
+      "path": "assets/standing.png",
+      "sha256": "c03d6039a0d576290e7dfcbd259c29ed3d07a430e31ed9b5f6e840f9a087d801",
+      "bytes": 1243048,
+      "label": "Standing foreground pair",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-wisps-png",
+      "path": "assets/wisps.png",
+      "sha256": "56a6da9fb8c2aa54cb15ba12179ac3bbfd119411480181526b487888ccec6fcf",
+      "bytes": 1934523,
+      "label": "Wisps",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-young-man-v2-png",
+      "path": "assets/young-man-v2.png",
+      "sha256": "937fd38f7da7afc64c4bbc41231ca36b8abae9aac7f2e156fde795828097b036",
+      "bytes": 1747621,
+      "label": "Young foreground man \u00b7 alpha cutout",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-assets-young-man-png",
+      "path": "assets/young-man.png",
+      "sha256": "448a63f20626448486272b7b9ce73a982b8e4be97c7b8a44f968558921e1b9af",
+      "bytes": 1633244,
+      "label": "Young Man",
+      "usageLabel": "generated-recorded",
+      "source": "Built-in image generation, as recorded in the existing asset manifest",
+      "license": "Generated project asset; source/reference restrictions are not independently cleared"
+    },
+    {
+      "id": "asset-atmosphere-engine-js",
+      "path": "atmosphere-engine.js",
+      "sha256": "c028b03a522e6b63a824b9e4dedf4f390e8fc612d573656b8523b9d4701ba8c4",
+      "bytes": 2502,
+      "label": "Animated clouds, smoke & fog \u00b7 path-driven billboards",
+      "usageLabel": "review-required",
+      "source": "Legacy project file; exact origin not documented",
+      "license": "Unknown; do not automatically reuse outside this task"
+    },
+    {
+      "id": "asset-battle-motion-js",
+      "path": "battle-motion.js",
+      "sha256": "fbd10dbedbd16351d654b7477e1398fa4e5cf04078f65a23aa5b0427adaf7fcf",
+      "bytes": 1656,
+      "label": "Glide & staggered firing \u00b7 deterministic motion recipe",
+      "usageLabel": "review-required",
+      "source": "Legacy project file; exact origin not documented",
+      "license": "Unknown; do not automatically reuse outside this task"
+    },
+    {
+      "id": "asset-brand-marks-js",
+      "path": "brand-marks.js",
+      "sha256": "4c973244ea9577695ece44378392156330276a0b25e08161100d1f0a0410c92a",
+      "bytes": 1962,
+      "label": "Brand Marks",
+      "usageLabel": "project-procedural",
+      "source": "Project source: brand-marks.js",
+      "license": "Project-scoped code; no external model license applies. Embedded brand paths retain their brand-reference label."
+    },
+    {
+      "id": "asset-brush-writing-js",
+      "path": "brush-writing.js",
+      "sha256": "3057f0cef2b187e05df5c577482f5b60512a70ee4d7722937a8620cd90302090",
+      "bytes": 4514,
+      "label": "Noir Brush / Ink / Chalk \u00b7 pen-path alphabet",
+      "usageLabel": "review-required",
+      "source": "Legacy project file; exact origin not documented",
+      "license": "Unknown; do not automatically reuse outside this task"
+    },
+    {
+      "id": "asset-chapter-motion-js",
+      "path": "chapter-motion.js",
+      "sha256": "73ce440684eb1cbbe99e4f0e93f63fc3f52727225f6338b67aa1a9bafb4604cf",
+      "bytes": 6309,
+      "label": "Chapter Motion",
+      "usageLabel": "project-procedural",
+      "source": "Project source: chapter-motion.js",
+      "license": "Project-scoped code; no external model license applies. Embedded brand paths retain their brand-reference label."
+    },
+    {
+      "id": "asset-chapter-shoes-js",
+      "path": "chapter-shoes.js",
+      "sha256": "9b9dbacf0ee61258ed2690c2b6c643654ab18c466e1ac94333c62e5675d379ce",
+      "bytes": 6652,
+      "label": "Chapter Shoes",
+      "usageLabel": "project-procedural",
+      "source": "Project source: chapter-shoes.js",
+      "license": "Project-scoped code; no external model license applies. Embedded brand paths retain their brand-reference label."
+    },
+    {
+      "id": "asset-chess-engine-js",
+      "path": "chess-engine.js",
+      "sha256": "17d05f5a735691bda82a2cd5d762e658c9be5109066f26e09908739a7fbf884b",
+      "bytes": 22746,
+      "label": "Chessboard and pieces \u00b7 Three.js geometry",
+      "usageLabel": "review-required",
+      "source": "Legacy project file; exact origin not documented",
+      "license": "Unknown; do not automatically reuse outside this task"
+    },
+    {
+      "id": "asset-city-engine-js",
+      "path": "city-engine.js",
+      "sha256": "ee59a8e0b4986a12a391ae026d41265837ce65363ecbafa4e887f8e6e9973578",
+      "bytes": 3801,
+      "label": "Image-on-3D-plane engine",
+      "usageLabel": "review-required",
+      "source": "Legacy project file; exact origin not documented",
+      "license": "Unknown; do not automatically reuse outside this task"
+    },
+    {
+      "id": "asset-depot-chapter-js",
+      "path": "depot-chapter.js",
+      "sha256": "a9b56eac69ed93da2898d54f5cad2d46c5d5fc9ebbc8a1019e57d8d61a30b8ef",
+      "bytes": 6082,
+      "label": "Depot Chapter",
+      "usageLabel": "project-procedural",
+      "source": "Project source: depot-chapter.js",
+      "license": "Project-scoped code; no external model license applies. Embedded brand paths retain their brand-reference label."
+    },
+    {
+      "id": "asset-depot-glass-js",
+      "path": "depot-glass.js",
+      "sha256": "b05b183584df0782db0f2ea4b93e45acdfe09c02c211f302cc3a844b70c77e38",
+      "bytes": 9009,
+      "label": "Depot Glass",
+      "usageLabel": "project-procedural",
+      "source": "Project source: depot-glass.js",
+      "license": "Project-scoped code; no external model license applies. Embedded brand paths retain their brand-reference label."
+    },
+    {
+      "id": "asset-depot-portal-js",
+      "path": "depot-portal.js",
+      "sha256": "cebda0d924b20148068f3d0b4aa8b3f186d626cda114739b05c820f9bdb50a3d",
+      "bytes": 2367,
+      "label": "Depot Portal",
+      "usageLabel": "project-procedural",
+      "source": "Project source: depot-portal.js",
+      "license": "Project-scoped code; no external model license applies. Embedded brand paths retain their brand-reference label."
+    },
+    {
+      "id": "asset-vendor-orbitcontrols-js",
+      "path": "vendor/OrbitControls.js",
+      "sha256": "6f3052dd8860a60fe6999260d50558ff54609523724c6e374326228e5590cf55",
+      "bytes": 32146,
+      "label": "Orbitcontrols",
+      "usageLabel": "licensed-source",
+      "source": "https://github.com/mrdoob/three.js",
+      "license": "MIT; see vendor/THREE-LICENSE.txt. Exact original download URL/version not recorded in the legacy checkout."
+    },
+    {
+      "id": "asset-vendor-reflector-js",
+      "path": "vendor/Reflector.js",
+      "sha256": "446cba593c612fabf01442b593b6bd69b6a13668ab55866a70579bcb5774ee3e",
+      "bytes": 7055,
+      "label": "Reflector",
+      "usageLabel": "licensed-source",
+      "source": "https://github.com/mrdoob/three.js",
+      "license": "MIT; see vendor/THREE-LICENSE.txt. Exact original download URL/version not recorded in the legacy checkout."
+    },
+    {
+      "id": "asset-vendor-three-license-txt",
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "bytes": 1081,
+      "label": "Three License",
+      "usageLabel": "licensed-source",
+      "source": "https://github.com/mrdoob/three.js",
+      "license": "MIT; see vendor/THREE-LICENSE.txt. Exact original download URL/version not recorded in the legacy checkout."
+    },
+    {
+      "id": "asset-vendor-transformcontrols-js",
+      "path": "vendor/TransformControls.js",
+      "sha256": "ad26c2fd761370c633bf29d6138c136bb46da730dab269349fc06832c80211b1",
+      "bytes": 41675,
+      "label": "Transformcontrols",
+      "usageLabel": "licensed-source",
+      "source": "https://github.com/mrdoob/three.js",
+      "license": "MIT; see vendor/THREE-LICENSE.txt. Exact original download URL/version not recorded in the legacy checkout."
+    },
+    {
+      "id": "asset-vendor-three-module-js",
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681,
+      "label": "Three.Module",
+      "usageLabel": "licensed-source",
+      "source": "https://github.com/mrdoob/three.js",
+      "license": "MIT; see vendor/THREE-LICENSE.txt. Exact original download URL/version not recorded in the legacy checkout."
+    }
+  ]
+}

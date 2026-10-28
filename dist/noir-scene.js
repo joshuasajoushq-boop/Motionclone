@@ -1,6 +1,6 @@
-import {recordSceneAsset,alphaFor,sampleKeys,visiblePixels} from './scene-geometry.js?v=depot-v17';
-import {drawBrushText,inkPaths,whiteGlyphRange} from './brush-writing.js?v=depot-v17';
-import {createAtmosphere} from './atmosphere-engine.js?v=depot-v17';
+import {recordSceneAsset,alphaFor,sampleKeys,visiblePixels} from './scene-geometry.js?v=motion-v36';
+import {drawBrushText,inkPaths,whiteGlyphRange} from './brush-writing.js?v=motion-v36';
+import {createAtmosphere} from './atmosphere-engine.js?v=motion-v36';
 const clamp=v=>Math.max(0,Math.min(1,v)),ease=v=>{v=clamp(v);return v*v*(3-2*v)};
 export function noirState(age,f){const intro=f.noirFadeStart+f.noirFadeDuration+f.noirBlackHold,t=age-intro,q=ease(t/f.noirReveal),shift=ease((t-f.noirShiftStart)/f.noirShiftTime);return {intro,t,q,shift,foreground:f.noirStartScale+(f.noirEndScale-f.noirStartScale)*q,background:1+f.noirBackDepth*q,black:ease((age-f.noirFadeStart)/f.noirFadeDuration),brightness:clamp(q*1.2)*f.noirExposure/100}}
 // Anchored text uses the same world transform as the cutout for every reveal frame.

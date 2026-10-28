@@ -1,6 +1,6 @@
-import {recordSceneAsset,alphaFor,sampleKeys} from './scene-geometry.js?v=depot-v17';
-import {battleState,shotEvents,sampleShot,smooth} from './battle-motion.js?v=depot-v17';
-import {createAtmosphere,hash} from './atmosphere-engine.js?v=depot-v17';
+import {recordSceneAsset,alphaFor,sampleKeys} from './scene-geometry.js?v=motion-v36';
+import {battleState,shotEvents,sampleShot,smooth} from './battle-motion.js?v=motion-v36';
+import {createAtmosphere,hash} from './atmosphere-engine.js?v=motion-v36';
 export function resolveSoldierSource(master,individual,fallback){const ready=im=>im?.naturalWidth>0;const path=im=>{try{return new URL(im.src,'https://local.invalid').pathname}catch{return ''}};const bundled=im=>/\/(soldiers-sheet\.png|soldier-[1-4]\.svg)$/.test(path(im));if(ready(individual)&&!bundled(individual))return {image:individual,sheet:false};if(ready(master)&&!bundled(master))return {image:master,sheet:true};if(ready(individual))return {image:individual,sheet:path(individual).endsWith('/soldiers-sheet.png')};if(ready(master))return {image:master,sheet:true};return ready(fallback)?{image:fallback,sheet:true}:null}
 export function createBattleScene(onReady=()=>{}){const standalone=Array.from({length:4},(_,i)=>{const im=new Image();im.onload=onReady;im.src=new URL(`./assets/soldier-${i+1}.svg`,import.meta.url).href;return im});const fallbackSheet=new Image();fallbackSheet.onload=onReady;fallbackSheet.src=new URL('./assets/soldiers-sheet.png?visibility=3',import.meta.url).href;const atmosphere=createAtmosphere(),cropped=new Map();let shotKey='',events=[];
 function soldierTexture(im,index){const key=im.src+'|'+index;if(cropped.has(key))return cropped.get(key);const c=document.createElement('canvas');c.width=768;c.height=512;const x=c.getContext('2d');x.drawImage(im,(index%2)*im.naturalWidth/2,Math.floor(index/2)*im.naturalHeight/2,im.naturalWidth/2,im.naturalHeight/2,0,0,768,512);if(cropped.size>24)cropped.clear();cropped.set(key,c);return c}

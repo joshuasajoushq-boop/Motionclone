@@ -1,8 +1,8 @@
-import {depotCamera,projectDepotObject,drawDepotSurface} from './depot-camera.js?v=depot-v17';
-import {depotFigureTexture} from './depot-assets.js?v=depot-v17';
-import {depotState,depotPlacement,depotEnvelope} from './depot-motion.js?v=depot-v17';
-import {recordSceneAsset,alphaFor,sampleKeys} from './scene-geometry.js?v=depot-v17';
-import {createAtmosphere} from './atmosphere-engine.js?v=depot-v17';
+import {depotCamera,projectDepotObject,drawDepotSurface} from './depot-camera.js?v=motion-v36';
+import {depotFigureTexture} from './depot-assets.js?v=motion-v36';
+import {depotState,depotPlacement,depotEnvelope} from './depot-motion.js?v=motion-v36';
+import {recordSceneAsset,alphaFor,sampleKeys} from './scene-geometry.js?v=motion-v36';
+import {createAtmosphere} from './atmosphere-engine.js?v=motion-v36';
 // Separate vector insignia allows position, size, rotation, color and visibility edits.
 export function drawDepotInsignia(c,mark,width,height,armband=false){if(mark?.visible===false)return;const size=width*(mark?.size??.22),x=-width/2+width*(mark?.x??.32),y=-height/2+height*(mark?.y??.5);c.save();c.translate(x,y);c.rotate((mark?.rotation||0)*Math.PI/180);c.globalAlpha*=mark?.opacity??.85;if(armband){const band=c.createLinearGradient(-size,0,size,0);band.addColorStop(0,'#451710');band.addColorStop(.3,mark.bandColor||'#ab211b');band.addColorStop(.75,mark.bandColor||'#ab211b');band.addColorStop(1,'#4c1811');c.fillStyle=band;c.beginPath();c.moveTo(-size*.82,-size*.45);c.quadraticCurveTo(0,-size*.56,size*.82,-size*.45);c.lineTo(size*.82,size*.45);c.quadraticCurveTo(0,size*.55,-size*.82,size*.45);c.closePath();c.fill();c.fillStyle='#e6e0ce';c.beginPath();c.arc(0,0,size*.46,0,Math.PI*2);c.fill()}c.rotate((armband?45:mark?.tilt??45)*Math.PI/180);const r=size*(armband ? .23 : .42);c.strokeStyle=mark?.color||(armband?'#171410':'#dfddcb');c.lineWidth=r*.36;c.lineCap='butt';c.lineJoin='miter';c.beginPath();c.moveTo(0,-r);c.lineTo(0,r);c.moveTo(-r,0);c.lineTo(r,0);c.moveTo(0,-r);c.lineTo(r,-r);c.moveTo(r,0);c.lineTo(r,r);c.moveTo(0,r);c.lineTo(-r,r);c.moveTo(-r,0);c.lineTo(-r,-r);c.stroke();c.restore();return {x,y,size}}
 export function createDepotScene(){const air=createAtmosphere();function cover(c,im,scale=1){if(!im?.naturalWidth)return;const r=Math.max(960/im.naturalWidth,540/im.naturalHeight)*scale;c.drawImage(im,480-im.naturalWidth*r/2,270-im.naturalHeight*r/2,im.naturalWidth*r,im.naturalHeight*r)}

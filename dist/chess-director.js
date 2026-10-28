@@ -1,6 +1,6 @@
 /* Authoring layer: arbitrary pose keys, camera keys, branding and practical lights. */
 let chessMotionAPI=null,motionObject='b-knight-6',motionKey=0,cameraKey=0,logoObject='w-bishop-2';
-import('./chess-motion.js?v=depot-v17').then(api=>{chessMotionAPI=api;if(activeEffect==='chess')renderChessDirector()});
+import('./chess-motion.js?v=motion-v36').then(api=>{chessMotionAPI=api;if(activeEffect==='chess')renderChessDirector()});
 function chessSeconds(){return Math.max(0,t*settings.duration-phaseTimes().chess)}
 function seekChess(seconds){playing=false;t=(phaseTimes().chess+Math.max(0,Math.min(fx.chessDuration,seconds)))/settings.duration;document.querySelector('#play').textContent='▶';base._renderKey=''}
 function homePose(id){const o=chessEngine?.objects.get(id),saved=fx.chessObjects?.[id];return saved?{...structuredClone(saved),rotation:saved.rotation.map(v=>v*180/Math.PI),visible:true}:{position:[...(o?.userData.home||[0,0,0])],rotation:[0,0,0],scale:[1,1,1],visible:true}}
